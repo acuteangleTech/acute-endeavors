@@ -5698,3 +5698,38 @@ ul.featured-list-wrapper li{
     height: 80px;
   }
 }
+.floating-buttons {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 999;
+}
+
+.floating-buttons a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.floating-buttons a:hover {
+  transform: scale(1.15);
+}
+
+.call-btn {
+  background-color: #007bff; /* Blue */
+}
+
+.whatsapp-btn {
+  background-color: #25d366; /* Green */
+}
