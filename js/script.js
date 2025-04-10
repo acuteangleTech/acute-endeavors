@@ -145,6 +145,64 @@ document.addEventListener('DOMContentLoaded', function () {
           window.dispatchEvent(e);
       }
   };
+
+  // Menu Toggle Functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.querySelector('.action--menu');
+    const closeButton = document.querySelector('.action--close');
+    const menu = document.querySelector('.menu');
+    
+    if (menuButton && closeButton && menu) {
+      // Open menu
+      menuButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        menu.classList.add('menu--open');
+        document.body.style.overflow = 'hidden';
+        console.log('Menu opened');
+      });
+      
+      // Close menu
+      closeButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        menu.classList.remove('menu--open');
+        document.body.style.overflow = '';
+        console.log('Menu closed');
+      });
+      
+      // Close menu when clicking outside
+      document.addEventListener('click', function(e) {
+        if (menu.classList.contains('menu--open') && 
+            !menu.contains(e.target) && 
+            !menuButton.contains(e.target)) {
+          menu.classList.remove('menu--open');
+          document.body.style.overflow = '';
+          console.log('Menu closed by outside click');
+        }
+      });
+      
+      // Close menu on escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && menu.classList.contains('menu--open')) {
+          menu.classList.remove('menu--open');
+          document.body.style.overflow = '';
+          console.log('Menu closed by escape key');
+        }
+      });
+      
+      // Prevent menu from closing when clicking inside it
+      menu.addEventListener('click', function(e) {
+        e.stopPropagation();
+      });
+    } else {
+      console.error('Menu elements not found:', {
+        menuButton: !!menuButton,
+        closeButton: !!closeButton,
+        menu: !!menu
+      });
+    }
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -325,4 +383,42 @@ $(".owl-carousel").owlCarousel({
     }
   }
 });
+});
+
+// Testimonial Carousel Configuration
+$(document).ready(function(){
+  $(".testimonial-carousel").owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: true,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    smartSpeed: 1000,
+    responsive: {
+      0: {
+        items: 1,
+        margin: 15
+      },
+      768: {
+        items: 2,
+        margin: 20
+      },
+      992: {
+        items: 3,
+        margin: 30
+      }
+    }
+  });
+
+  // Add laptop mockup hover effect
+  $('.testimonial-carousel .item').hover(
+    function() {
+      $(this).addClass('hover');
+    },
+    function() {
+      $(this).removeClass('hover');
+    }
+  );
 });

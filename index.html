@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel='stylesheet' id='filterable-portfolio-css'
     href='wp-content/plugins/filterable-portfolio/assets/css/frontend.css@ver=1.6.4-1737094542.css' type='text/css'
@@ -92,16 +94,17 @@
 
 </head>
 
-<body
-  class="home page-template page-template-front-page page-template-front-page-php page page-id-64 loftloader-lite-enabled elementor-default elementor-kit-1137">
+<body class="home page-template page-template-front-page page-template-front-page-php page page-id-64 loftloader-lite-enabled elementor-default elementor-kit-1137">
+  
+  <!-- Preloader -->
   <div id="loftloader-wrapper" class="pl-beating" data-show-close-time="15000" data-max-load-time="0">
     <div class="loader-section section-fade"></div>
-
     <div class="loader-close-button" style="display: none;">
       <span class="screen-reader-text">Close</span>
     </div>
   </div>
 
+  <!-- Loading animation and main content -->
   <div class="loading">
     <svg class="hidden">
       <symbol id="icon-arrow" viewBox="0 0 24 24">
@@ -115,25 +118,25 @@
         <path
           d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z" />
       </symbol>
-      <!-- <svg id="icon-github" viewBox="0 0 33 33">
+           <!-- <svg id="icon-github" viewBox="0 0 33 33">
             <title>github</title>
             <path
                 d="M16.608.455C7.614.455.32 7.748.32 16.745c0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.353 1.112-.785 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.882-1.809-2.383-1.809-2.383-1.479-1.01.112-.99.112-.99 1.635.115 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.353.148-1.052.569-1.77 1.034-2.177-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.233 1.677-4.371-.168-.412-.727-2.069.16-4.311 0 0 1.367-.438 4.479 1.67a15.602 15.602 0 0 1 4.078-.549 15.62 15.62 0 0 1 4.078.549c3.11-2.108 4.475-1.67 4.475-1.67.889 2.242.33 3.899.163 4.311C26.37 12.66 27 14.115 27 15.893c0 6.258-3.809 7.635-7.437 8.038.584.503 1.105 1.497 1.105 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.294.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29">
             </path>
         </svg> -->
-      <symbol id="icon-menu" viewBox="0 0 119 25">
-        <title>menu</title>
-        <path d="M36,8 L36,0 L100,0 L100,8 L36,8 Z M0,8 L0,0 L24,0 L24,8 L0,8 Z M0,28 L0,20 L71,20 L71,28 L0,28 Z" />
-      </symbol>
-      <symbol id="icon-close" viewBox="0 0 24 24">
-        <title>close</title>
-        <path
-          d="M24 1.485L22.515 0 12 10.515 1.485 0 0 1.485 10.515 12 0 22.515 1.485 24 12 13.484 22.515 24 24 22.515 13.484 12z" />
-      </symbol>
-    </svg>
+        <symbol id="icon-menu" viewBox="0 0 119 25">
+          <title>menu</title>
+          <path d="M36,8 L36,0 L100,0 L100,8 L36,8 Z M0,8 L0,0 L24,0 L24,8 L0,8 Z M0,28 L0,20 L71,20 L71,28 L0,28 Z" />
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24">
+          <title>close</title>
+          <path
+            d="M24 1.485L22.515 0 12 10.515 1.485 0 0 1.485 10.515 12 0 22.515 1.485 24 12 13.484 22.515 24 24 22.515 13.484 12z" />
+        </symbol>
+      </svg>
+
     <main>
-
-
+      <!-- Navigation -->
       <nav class="menu">
         <div class="menu__item menu__item--1" data-direction="bt">
           <div class="menu__item-inner">
@@ -146,102 +149,236 @@
             </div>
           </div>
         </div>
+
         <div class="menu__item menu__item--2" data-direction="tb">
           <div class="menu__item-inner">
             <div class="menu__item-map"></div>
             <h3 style="text-decoration: none">Get In Touch</h3>
             <ul>
-
-              <li>
-                <b>Email Us</b><br>
-                <a href="mailto:info@acutendeavors.com">info@acutendeavors.com</a>
-              </li>
-
-              <li><b>Call Us</b><br>
-                <a href="tel:+918138916303">+91 8138916303</a>
-              </li>
-
+              <li><b>Email Us</b><br><a href="mailto:info@acutendeavors.com">info@acutendeavors.com</a></li>
+              <li><b>Call Us</b><br><a href="tel:+918138916303">+91 8138916303</a></li>
             </ul>
-
           </div>
         </div>
+
         <div class="menu__item menu__item--3" data-direction="bt">
           <div class="menu__item-inner">
             <div class="sidemenu">
               <h3>Quick Links</h3>
               <a href="/clients.html" class="sidemenu__item"><span class="sidemenu__item-inner">Clients</span></a>
               <a href="blog.html" class="sidemenu__item"><span class="sidemenu__item-inner">Blog</span></a>
-              <a href="web-design-development/index.html" class="sidemenu__item"><span class="sidemenu__item-inner">Web
-                  Design & Development</span></a>
-              <a href="/digitalmarketing.html" class="sidemenu__item"><span class="sidemenu__item-inner">Digital
-                  Marketing</span></a>
-              <a href="services/branding/index.html" class="sidemenu__item"><span
-                  class="sidemenu__item-inner">Branding</span></a>
-              <a href="/softwaredevelopment.html" class="sidemenu__item"><span class="sidemenu__item-inner">Software
-                  development</span></a>
+              <a href="web-design-development/index.html" class="sidemenu__item"><span class="sidemenu__item-inner">Web Design & Development</span></a>
+              <a href="/digitalmarketing.html" class="sidemenu__item"><span class="sidemenu__item-inner">Digital Marketing</span></a>
+              <a href="services/branding/index.html" class="sidemenu__item"><span class="sidemenu__item-inner">Branding</span></a>
+              <a href="/softwaredevelopment.html" class="sidemenu__item"><span class="sidemenu__item-inner">Software development</span></a>
               <a href="/casestudy.html" class="sidemenu__item"><span class="sidemenu__item-inner">Case Study</span></a>
               <a href="/career.html" class="sidemenu__item"><span class="sidemenu__item-inner">Career</span></a>
-
             </div>
           </div>
         </div>
 
-        <button class="action action--menu"><svg class="icon icon--menu">
-            <use xlink:href="#icon-menu"></use>
-          </svg></button>
-        <button class="action action--close"><svg class="icon icon--close">
-            <use xlink:href="#icon-close"></use>
-          </svg></button>
+        <button class="action action--menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button>
+        <button class="action action--close"><svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg></button>
       </nav>
     </main>
   </div>
 
+  <!-- Top Section -->
   <div class="topSection">
     <div class="container-fluid">
       <div class="row">
-
         <div class="col-6 logo">
-          <a href="index.html"><img class="home-logo" src="assets/logo side.png"></a>
+          <a href="index.html"><img class="home-logo" src="assets/logo side.png" alt="Home Logo"></a>
         </div>
-
         <div class="col-6">
-
           <div class="call">
             <div class="round round1">
-              <div class=""><svg width="65" height="67" viewBox="0 0 65 67" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M54.687 47.6469L16.8745 61.8991C10.0313 64.4784 2.96219 58.6825 4.15003 51.4665L10.7135 11.5938C11.9014 4.37786 20.4553 1.15373 26.1106 5.79043L57.3596 31.4109C63.0149 36.0476 61.5302 45.0676 54.687 47.6469Z"
-                    stroke="#6610f2" stroke-width="7" />
-                </svg>
-              </div>
+              <svg width="65" height="67" viewBox="0 0 65 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M54.687 47.6469L16.8745 61.8991C10.0313 64.4784 2.96219 58.6825 4.15003 51.4665L10.7135 11.5938C11.9014 4.37786 20.4553 1.15373 26.1106 5.79043L57.3596 31.4109C63.0149 36.0476 61.5302 45.0676 54.687 47.6469Z" stroke="#6610f2" stroke-width="7" />
+              </svg>
             </div>
-
-            <button class="btn btn-danger hvr-sweep-to-right" data-bs-toggle="modal"
-              data-bs-target="/contact-us.1.html"> <a href="contact-us.1.html">Get In
-                Touch</a> </button>
-
-
+            <a href="contact-us.1.html" class="btn btn-danger hvr-sweep-to-right">Get In Touch</a>
           </div>
-
         </div>
-
       </div>
-
     </div>
   </div>
 
-  </div>
 
 
   <div class="mobileBottomNav">
+    <ul>
+      <li>
+        <a href="index.html">
+          <img src="assets/home 1.svg" alt="Home Icon" />
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="/service.html">
+          <img src="assets/servives 1.svg" alt="Services Icon" />
+          <span>Services</span>
+        </a>
+      </li>
+      <li>
+        <a href="contact-us.1.html">
+          <img src="assets/contact 1.svg" alt="Contact Icon" />
+          <span>Contact</span>
+        </a>
+      </li>
+      <li>
+        <a href="/portfolio.html">
+          <img src="assets/project 1.svg" alt="Projects Icon" />
+          <span>Projects</span>
+        </a>
+      </li>
+      <li>
+        <a href="#icon-menu">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 17.9998H14V29.9998H2V17.9998Z" fill="#6610F2"/>
+            <rect x="2" y="2" width="12" height="12" fill="#6610F2"/>
+            <rect x="18" y="18" width="12" height="12" fill="#6610F2"/>
+            <rect x="18" y="2" width="12" height="12" fill="#6610F2"/>
+          </svg>
+          <span>Menu</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+  <!-- <div class="mobileBottomNav">
     <ul>
       <li><a href="index.html"><img class="lazy" src="assets/home 1.svg">
           <span>Home</span>
         </a></li>
       <li><a href="/service.html"><img class="lazy" src="assets/servives 1.svg">
           <span>Services</span>
-        </a></li>
+        </a></li>$(document).ready(function () {
+  // Initialize Owl Carousel for the client section
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 2
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
+  });
+
+  // Initialize Owl Carousel for product slider
+  $('.productSlider').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    dots: false,
+    smartSpeed: 700,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+        stagePadding: 0
+      },
+      768: {
+        items: 2,
+        stagePadding: 10 // Reduced padding = wider image
+      },
+      1200: {
+        items: 3,
+        stagePadding: 30
+      }
+    }
+  });
+
+  // Initialize Owl Carousel for client section
+  $('.clientSection .owl-carousel').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 2500,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 2,
+        stagePadding: 0
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
+  });
+
+  // Mobile menu functionality
+  const $menu = $('.menu');
+  const $menuItems = $('.menu__item-inner');
+  const $mainMenuLinks = $('.mainmenu__item');
+  const $sideMenuItems = $('.sidemenu__item-inner');
+  const $openBtn = $('.action--menu-small'); // Mobile menu button
+  const $closeBtn = $('.action--close'); // Close button in the modal
+
+  // Function to open menu
+  $openBtn.on('click', function () {
+    $menu.addClass('menu--open');
+
+    // Slide in menu items
+    $menuItems.each(function (i) {
+      $(this).delay(100 * i).animate({
+        transform: 'translate3d(0, 0, 0)'
+      }, {
+        duration: 500,
+        step: function (now, fx) {
+          $(this).css('transform', 'translate3d(0, 0, 0)');
+        }
+      });
+    });
+
+    // Fade in menu links
+    $mainMenuLinks.each(function (i) {
+      $(this).delay(200 * i).animate({ opacity: 1 }, 500);
+    });
+
+    // Show close button
+    $closeBtn.css('opacity', 1);
+  });
+
+  // Function to close menu
+  $closeBtn.on('click', function () {
+    $menu.removeClass('menu--open');
+
+    // Reset transforms and opacities
+    $menuItems.css('transform', 'translate3d(100%, 0, 0)');
+    $mainMenuLinks.css('opacity', 0);
+    $sideMenuItems.css('transform', 'translate3d(0, 100%, 0)');
+
+    // Hide close button
+    $closeBtn.css('opacity', 0);
+  });
+
+  // Close modal when clicking outside of the modal content
+  $(window).on('click', function (event) {
+    if ($(event.target).is($menu)) {
+      $menu.removeClass('menu--open'); // Hide the menu
+    }
+  });
+});
+
       <li><a href="contact-us.1.html"><img class="lazy" src="assets/contact 1.svg">
           <span>Contact</span>
         </a></li>
@@ -252,7 +389,7 @@
           <span>Menu</span>
         </a></li>
 
-    </ul>
+    </ul> -->
   </div>
 
 
@@ -398,43 +535,43 @@
             >
             <div class="item">
               <img 
-                src="/assets/business.png" alt="" />
+                src="assets/business.png" alt="" />
             </div>
             <div class="item">
               <img  style="background-color: #000;"
-                src="/assets/c1.png" alt="" />
+                src="assets/c1.png" alt="" />
             </div>
             <div class="item">
               <img 
-                src="/assets/c2.png" alt="" />
+                src="assets/c2.png" alt="" />
             </div>
             <div class="item">
               <img 
-                src="/assets/c3.png" alt="" />
+                src="assets/c3.png" alt="" />
             </div>
             <div class="item">
               <img 
-                src="/assets/c4.png" alt="" />
+                src="assets/c4.png" alt="" />
             </div>
             <div class="item">
               <img 
-                src="/assets/c6.png" alt="" />
+                src="assets/c6.png" alt="" />
             </div>
             <div class="item">
               <img 
-                src="/assets/c7.png" alt="" />
+                src="assets/c7.png" alt="" />
             </div>
             <div class="item">
               <img 
-                src="/assets/c8.png" alt="" />
+                src="assets/c8.png" alt="" />
             </div>
             <div class="item">
               <img 
-                src="/assets/c9.png" alt="" />
+                src="assets/c9.png" alt="" />
             </div>
             <div class="item">
               <img 
-                src="/assets/c10.png" alt="" />
+                src="assets/c10.png" alt="" />
             </div>
             <!-- <div class="item">
               <img class="lazy"
@@ -442,35 +579,35 @@
             </div> -->
             <div class="item">
               <img 
-                src="/assets/c13.png" alt="" />
+                src="assets/c13.png" alt="" />
             </div>
             <div class="item">
               <img 
-                src="/assets/c14.png" alt="" />
+                src="assets/c14.png" alt="" />
             </div>
             <div class="item">
               <img 
-                src="/assets/KSSIA.png" alt="" />
+                src="assets/KSSIA.png" alt="" />
             </div>
             <div class="item">
               <img 
-                src="/assets/HEF.png" alt="" />
+                src="assets/HEF.png" alt="" />
             </div>
             <div class="item">
               <img 
-                src="/assets/BOOK AERO.png" alt="" />
+                src="assets/BOOK AERO.png" alt="" />
             </div>
             <div class="item">
               <img 
-                src="/assets/AKCAF.png" alt="" />
+                src="assets/AKCAF.png" alt="" />
             </div>
             <div class="item">
               <img 
-                src="/assets/18771513.png" alt="" />
+                src="assets/18771513.png" alt="" />
             </div>
             <div class="item">
               <img 
-                src="/assets/cbs.svg" alt="" />
+                src="assets/cbs.svg" alt="" />
             </div>
 
 
@@ -703,7 +840,7 @@
                   d="M16.6529 32.8593C16.6529 32.5595 16.6445 32.2597 16.6548 31.9604C16.6707 31.4939 16.9293 31.1959 17.3148 31.1805C17.6978 31.1651 18.0005 31.4523 18.0175 31.9108C18.0408 32.5353 18.041 33.1618 18.0193 33.7863C18.0027 34.2636 17.7307 34.5242 17.3256 34.5177C16.9299 34.5113 16.6729 34.228 16.6551 33.758C16.6438 33.459 16.653 33.1589 16.6529 32.8593Z"
                   fill="#6610f2" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M23.4088 32.8463C23.4088 33.1459 23.4167 33.4459 23.4068 33.7452C23.3914 34.2169 23.1399 34.5051 22.7489 34.5176C22.3425 34.5307 22.0613 34.2723 22.0438 33.7992C22.0205 33.1618 22.0209 32.5221 22.0468 31.8849C22.0646 31.448 22.3629 31.1738 22.7337 31.1808C23.105 31.1879 23.3809 31.475 23.4042 31.9085C23.4208 32.2203 23.4074 32.5336 23.4074 32.8463C23.408 32.8463 23.4084 32.8463 23.4088 32.8463Z"
+                  d="M23.4088 32.8463C23.4088 33.1459 23.4167 33.4459 23.4068 33.7452C23.3914 34.2169 23.1399 34.5051 22.7489 34.5176C22.3425 34.5307 22.0613 34.2723 22.0438 33.7992C22.0205 33.1618 22.0209 32.5221 22.0468 31.8849C22.0646 31.448 22.3629 31.1738 22.7337 31.1808C23.105 31.1879 23.3809 31.475 23.4042 31.9085C23.4208 32.2203 23.4074 32.5336 23.4074 32.8463C23.408 32.8463 23.4084 32.8463 23.4088 32.8463C23.408 32.8463 23.4084 32.8463 23.4088 32.8463Z"
                   fill="#6610f2" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M20.7198 34.1835C20.7195 34.4831 20.73 34.7832 20.717 35.0822C20.6957 35.5796 20.4359 35.8601 20.0212 35.8554C19.6242 35.8508 19.3603 35.5776 19.3468 35.1021C19.3294 34.4905 19.3276 33.8773 19.3477 33.2657C19.363 32.8022 19.6494 32.5205 20.0404 32.5262C20.4302 32.532 20.685 32.8164 20.719 33.2845C20.721 33.3105 20.7201 33.3366 20.7201 33.3627C20.7202 33.6363 20.7202 33.9099 20.7198 34.1835Z"
@@ -763,6 +900,7 @@
                   d="M15.6405 18.787C15.6145 18.7511 15.5886 18.7151 15.5626 18.6792C15.7851 18.471 15.975 18.1958 16.238 18.0708C16.5954 17.901 16.9726 18.1573 17.1806 18.6338C18.0073 20.5285 18.8289 22.4256 19.6522 24.3218C20.3072 25.8299 20.96 27.3391 21.6187 28.8457C21.7584 29.1652 21.8232 29.4724 21.5871 29.7742C21.2114 30.2544 20.5226 30.1429 20.2556 29.5307C18.7467 26.0707 17.2491 22.6063 15.7498 19.1422C15.7009 19.0292 15.6765 18.9059 15.6405 18.787ZM10.266 24.0358C10.4118 24.1885 10.516 24.3031 10.6261 24.4119C11.5449 25.3213 12.4664 26.228 13.3837 27.1386C13.8147 27.5663 13.8643 27.9909 13.5345 28.3305C13.2019 28.6728 12.751 28.6394 12.3267 28.2227C11.1344 27.0516 9.94452 25.8782 8.75985 24.6997C8.29375 24.2362 8.29375 23.8653 8.75718 23.4027C9.67223 22.4899 10.5954 21.5847 11.5157 20.6769C11.83 20.3669 12.1328 20.0441 12.4646 19.7537C12.811 19.4505 13.2376 19.4784 13.5304 19.7854C13.8106 20.0796 13.8152 20.4673 13.5337 20.8067C13.4437 20.9153 13.3362 21.0102 13.2353 21.1096C12.2589 22.0719 11.2824 23.0339 10.266 24.0358ZM27.1527 24.0767C26.9885 23.9055 26.8738 23.7803 26.7532 23.661C25.8131 22.7305 24.8659 21.8067 23.9338 20.8684C23.5817 20.5138 23.5795 20.0927 23.8841 19.7796C24.1903 19.4648 24.6343 19.4476 24.9848 19.7889C26.2485 21.0195 27.5036 22.2586 28.749 23.5071C29.0899 23.8489 29.0887 24.2526 28.7463 24.5959C27.5008 25.8443 26.246 27.084 24.982 28.3141C24.632 28.6547 24.1854 28.6339 23.8806 28.317C23.5782 28.0027 23.5839 27.5852 23.9373 27.2283C24.7458 26.4114 25.5684 25.6081 26.3878 24.8018C26.6321 24.5615 26.885 24.3299 27.1527 24.0767Z"
                   fill="white" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18.7038 3.73256C19.6719 3.73256 20.64 3.72867 21.608 3.73406C22.1717 3.7372 22.5093 4.0252 22.5098 4.48366C22.5104 4.94063 22.1704 5.2344 21.6097 5.23565C19.6734 5.24004 17.7373 5.23991 15.801 5.23565C15.2421 5.23452 14.8991 4.93987 14.8988 4.48517C14.8983 4.02946 15.2399 3.7372 15.7996 3.73406C16.7675 3.72867 17.7356 3.73256 18.7038 3.73256ZM11.851 4.472C11.8436 4.87842 12.1842 5.22638 12.5965 5.23353C13.0086 5.2408 13.3595 4.90514 13.3666 4.49684C13.374 4.08792 13.0363 3.7431 12.6217 3.73595C12.2091 3.7288 11.8583 4.06346 11.851 4.47188Z"
                   d="M18.7038 3.73256C19.6719 3.73256 20.64 3.72867 21.608 3.73406C22.1717 3.7372 22.5093 4.0252 22.5098 4.48366C22.5104 4.94063 22.1704 5.2344 21.6097 5.23565C19.6734 5.24004 17.7373 5.23991 15.801 5.23565C15.2421 5.23452 14.8991 4.93987 14.8988 4.48517C14.8983 4.02946 15.2399 3.7372 15.7996 3.73406C16.7675 3.72867 17.7356 3.73256 18.7038 3.73256ZM11.851 4.472C11.8583 4.06358 12.209 3.72892 12.6217 3.73607C13.0364 3.74334 13.374 4.08817 13.3666 4.49696C13.3594 4.90513 13.0086 5.24079 12.5965 5.23364C12.1842 5.22649 11.8437 4.87854 11.851 4.472Z"
                   fill="white" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -936,15 +1074,15 @@
       </div>
     </div>
 
-    <div class="owl-carousel projectSlider owl-theme">
-      <div class="item"><img src="assets/p1.png" width="630" height="473" alt="Project 1"></div>
-      <div class="item"><img src="assets/p2.png" width="630" height="473" alt="Project 2"></div>
-      <div class="item"><img src="assets/p3.png" width="630" height="473" alt="Project 3"></div>
-      <div class="item"><img src="assets/p4.png" width="630" height="473" alt="Project 4"></div>
-      <div class="item"><img src="assets/p5.png" width="630" height="473" alt="Project 5"></div>
-      <div class="item"><img src="assets/p6.png" width="630" height="473" alt="Project 6"></div>
-      <div class="item"><img src="assets/p7.png" width="630" height="473" alt="Project 7"></div>
-      <div class="item"><img src="assets/p11.png" width="630" height="473" alt="Project 8"></div>
+    <div class="owl-carousel productSlider owl-theme">
+      <div class="item"><img src="assets/p1.png"  alt="Project 1"></div>
+      <div class="item"><img src="assets/p2.png"  alt="Project 2"></div>
+      <div class="item"><img src="assets/p3.png"  alt="Project 3"></div>
+      <div class="item"><img src="assets/p4.png"  alt="Project 4"></div>
+      <div class="item"><img src="assets/p5.png" alt="Project 5"></div>
+      <div class="item"><img src="assets/p6.png" alt="Project 6"></div>
+      <div class="item"><img src="assets/p7.png"  alt="Project 7"></div>
+      <div class="item"><img src="assets/p11.png"  alt="Project 8"></div>
     </div>
   </section>
 
@@ -966,10 +1104,10 @@
     </div>
 
     <div class="owl-carousel productSlider owl-theme">
-      <div class="item"><img src="assets/KHEDMAH.jpeg" width="630" height="473" alt="Product 1"></div>
-      <div class="item"><img src="assets/EXPEN.jpeg" width="630" height="473" alt="Product 2"></div>
-      <div class="item"><img src="assets/EV.jpeg" width="630" height="473" alt="Product 3"></div>
-      <div class="item"><img src="assets/BUSINE (2).jpeg" width="630" height="473" alt="Product 4"></div>
+      <div class="item"><img src="assets/KHEDMAH.jpeg"  alt="Product 1"></div>
+      <div class="item"><img src="assets/EXPEN.jpeg"  alt="Product 2"></div>
+      <div class="item"><img src="assets/EV.jpeg"  alt="Product 3"></div>
+      <div class="item"><img src="assets/BUSINE (2).jpeg"  alt="Product 4"></div>
     </div>
   </section>
 
@@ -1409,12 +1547,7 @@
       <i class="fab fa-whatsapp"></i>
     </a>
   </div>
-
-
-
-
-
-  <!-- jQuery -->
+ -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- Owl Carousel JS -->
