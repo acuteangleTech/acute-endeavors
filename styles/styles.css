@@ -2057,7 +2057,36 @@ margin-right: -25px;
 	padding-left: 25px;
 	padding-right: 25px;
 }
+@media (max-width: 768px) {
+  .sItem {
+    padding: 25px 20px;
+    min-height: 320px;
+  }
 
+  .sItem img {
+    width: 60px;
+    margin-bottom: 15px;
+  }
+
+  .sItem h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+  }
+
+  .sItem p {
+    font-size: 13px;
+  }
+
+  .sitemsSec {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .sitems {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
 .tesimonial{
 	background-color: #fff;
@@ -5099,23 +5128,22 @@ margin-top: 13px;
 		padding-right:8px;
 	}
 	
-	.mobileBottomNav{
-	    display:block;
-	}
 	.mobileBottomNav {
+    display: block;
     position: fixed;
     bottom: 0;
     width: 100%;
     background: white;
     z-index: 999;
     border-top: 1px solid #ccc;
+    padding: 4px 0; /* Reduced padding to decrease height */
   }
   
   .mobileBottomNav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 8px 0;
+    padding: 4px 0; /* Adjusted padding */
     margin: 0;
     list-style: none;
   }
@@ -5125,43 +5153,43 @@ margin-top: 13px;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 11px; /* Reduced font size */
     color: #333;
   }
   
   .mobileBottomNav li img,
   .mobileBottomNav li svg {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 4px;
+    width: 20px; /* Reduced icon size */
+    height: 20px;
+    margin-bottom: 2px; /* Reduced margin below icons */
     fill: #6610F2;
   }
   
   .mobileBottomNav li span {
-    font-size: 11px;
+    font-size: 10px; /* Reduced font size */
     font-weight: 500;
     color: #333;
   }
   
-
-
-.menu .action.action--menu{
+  /* Menu button styling */
+  .menu .action.action--menu {
     position: fixed;
     bottom: 0px !important;
     top: auto !important;
     right: 3% !important;
     width: 60px;
     height: 55px;
-}
-.menu .action.action--menu svg{
-    display:none !important;
-}
-
-
-.bannerSection{
+  }
+  
+  .menu .action.action--menu svg {
+    display: none !important;
+  }
+  
+  /* Banner section height */
+  .bannerSection {
     height: 86vh;
-}
-
+  }
+  
 .testimonial-box {
 	background-color: #fff;
 	border-radius: 16px;
@@ -6014,11 +6042,22 @@ img {
   }
 	
   /* Optional: fine-tune for small screens */
-  @media (max-width: 768px) {
-	.owl-carousel .item img {
-	  max-height: 100vh;
-	}
+ 
+  /* === Mobile-Friendly Adjustments for Carousel Images === */
+@media (max-width: 768px) {
+  .owl-carousel .item img {
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
   }
+}
+
+@media (max-width: 576px) {
+  .owl-carousel .item img {
+    max-width: 85%;
+  }
+}
+
   .clientSection .item img {
 	width: 100%;
 	height: auto;
