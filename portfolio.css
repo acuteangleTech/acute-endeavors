@@ -1,0 +1,77 @@
+.filterable-portfolio-item__content {
+  position: relative; /* Position relative to position the overlay */
+  overflow: hidden; /* Hide overflow to prevent the mask from showing outside the image */
+  width: 410px; /* Set the width of the item */
+   
+  margin: 10px; /* Reduced margin around each item for smaller gaps */
+  object-fit: contain;
+}
+
+.img-wrap {
+  position: relative; /* Position relative for overlay */
+  width: 100%; /* Make it responsive */
+ 
+}
+
+.img-wrap img {
+  display: block; /* Ensures there are no gaps under images */
+  width: 410px; /* Make images fill the width of the container */
+  /* Maintain original height to prevent cropping */
+  object-fit: contain; /* Ensure the image fits within the width and height without cropping */
+}
+
+.overlay {
+  position: absolute; /* Position the overlay */
+  top: 0;
+  left: -100%; /* Start fully off-screen to the left */
+  width: 100%; /* Cover the entire width */
+  height: 100%; /* Cover the entire height */
+  background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+  display: flex; /* Use flex to center content */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  transition: left 0.5s ease; /* Smooth transition for the sliding effect */
+}
+
+.filterable-portfolio-item__content:hover .overlay {
+  left: 0; /* Slide in from left on hover */
+}
+
+.filterable-portfolio-item__supporting-text {
+  color: #fff; /* White text color */
+  text-align: center; /* Center text */
+}
+
+.button {
+  background-color: rgb(99, 10, 244); /* Example button color */
+  color: #151414; /* Button text color */
+  padding: 5px 10px; /* Padding for button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* No underline */
+  font-weight: normal; /* Normal font weight */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for button */
+}
+
+.button:hover {
+  background-color: #9b23fe; /* Darker shade on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+/* Additional styles to reduce gaps between images */
+.filterable-portfolio-item {
+  padding: 5px; /* Adjust padding to reduce gaps */
+  margin-bottom: 10px; /* Reduce bottom margin between rows */
+}
+@media (max-width: 768px) {
+  .row {
+    justify-content: center; /* Center items on small screens */
+    margin: 0 auto; /* Equal space on both sides */
+  }
+
+  .filterable-portfolio-item__content {
+    width: 100%; /* Make items adapt to mobile size */
+   
+    margin: auto; /* Center each item with top/bottom spacing */
+  }
+}
