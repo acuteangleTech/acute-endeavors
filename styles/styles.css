@@ -1362,99 +1362,44 @@ main {
   }
 }
 .contactSection {
-
-  border-radius: 30px;
-  padding: 60px 40px;
+  border-radius: 0; /* Remove border radius for a square look */
+  padding: 60px 40px; /* Padding for larger screens */
   color: #fff;
-  margin: 60px 0;
-  text-decoration: none;
+  margin: 0; /* Remove margin to take full width */
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
-.contactSection h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 40px;
-  text-decoration: none;
+/* Remove padding from the row */
+.contactBg {
+  padding-left: 0; /* Remove left padding from the row */
+  padding-right: 0; /* Remove right padding from the row */
 }
 
-.contactSection .form-control {
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid #fff;
-  border-radius: 0;
-  color: #fff;
-  padding: 10px 0;
-  margin-bottom: 20px;
-  font-size: 16px;
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .contactSection {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  .contactBg {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  
+  .contactPerson {
+    padding-top: 20px; /* Adjust padding for mobile */
+  }
+
+  .contactSection h2 {
+    font-size: 28px; /* Adjust font size for mobile */
+  }
 }
 
-.contactSection .form-control::placeholder {
-  color: #fff;
-  opacity: 0.8;
-}
-
-.contactSection textarea.form-control {
-  resize: none;
-  min-height: 100px;
-}
-
-.contactSection .btn-primary {
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 0;
-  position: relative;
-}
-
-.contactSection .btn-primary::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background-color: #8a2be2;
-  margin-top: 5px;
-  transition: width 0.3s;
-}
-
-.contactSection .btn-primary:hover::after {
-  width: 100px;
-}
-
-.contactPerson {
-  text-align: center;
-  padding-top: 30px;
-}
-
-.contactPerson h3 {
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.contactPerson h4 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  text-decoration: none;
-}
-
-.contactPerson p {
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  text-decoration: none;
-}
-
-.contactPerson .call2 {
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
 
 .call2 img {
   width: 20px;
@@ -1714,15 +1659,16 @@ img{
 
 .mobileBottomNav{
     position:fixed;
-    bottom:0;
+    margin-bottom:0;
     width:100%;
     /*height:55px;*/
     z-index:999999;
     text-align:center;
     background-color:#fff;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:1px;
+    padding-bottom:2px;
     display:none;
+    height:55px;
     
     
 /*    -webkit-border-top-left-radius: 15px;*/
@@ -5622,6 +5568,14 @@ ul.featured-list-wrapper li{
 .page.page-id-1134 .footerSection {
     padding-top: 50px;
 }
+/* Hide nav arrows for the product and project sliders */
+.productSlider .owl-nav {
+  display: none !important;
+}
+.productSlider .owl-dots {
+  display: none !important;
+}
+
 
 /* Carousel Styles */
 .owl-carousel {
@@ -5737,14 +5691,14 @@ ul.featured-list-wrapper li{
 }
 
 /* Portfolio Carousel Styles */
-.portfolio-carousel {
+/* .portfolio-carousel {
   padding: 20px 0;
 }
 
 .portfolio-carousel .item {
   padding: 10px;
   transition: all 0.3s ease;
-}
+} */
 
 /* .portfolio-carousel .item img {
   width: 100%;
@@ -5757,13 +5711,13 @@ ul.featured-list-wrapper li{
   transform: scale(1.05);
 } */
 
-.portfolio-carousel .owl-nav {
+/* .portfolio-carousel .owl-nav {
   position: absolute;
   top: 50%;
   width: 100%;
   transform: translateY(-50%);
-}
-
+} */
+/* 
 .portfolio-carousel .owl-prev,
 .portfolio-carousel .owl-next {
   position: absolute;
@@ -5779,7 +5733,7 @@ ul.featured-list-wrapper li{
 
 .portfolio-carousel .owl-prev {
   left: -20px;
-}
+} */
 
 .portfolio-carousel .owl-next {
   right: -20px;
@@ -5889,7 +5843,7 @@ ul.featured-list-wrapper li{
   }
 }
 .floating-buttons {
-  position: fixed;
+  
   right: 15px;
   bottom: 80px; /* Increased from ~20px to stay above bottom nav */
   display: flex;
@@ -5899,28 +5853,37 @@ ul.featured-list-wrapper li{
 }
 
 .floating-buttons a {
-  width: 45px;
-  height: 45px;
+  width: 75px;
+  height: 75px;
  /* Default color */
   color: white;
-  border-radius: 50%;
+  border-radius: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 25px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
-
+.floating-buttons a i {
+  font-size: 25px; /* Adjust icon size for mobile */
+}
 .call-btn {
   background-color: #007bff; /* Blue */
 }
 
 .whatsapp-btn {
   background-color: #25D366; /* WhatsApp Green */
+  
 }
 
+@media (max-width: 767px) {
+ 
 
+  .floating-buttons a i {
+    font-size: 25px; /* Adjust icon size for mobile */
+  }
+}
 /* Lazy Loading Styles */
 .lazy {
   opacity: 0;
@@ -5938,14 +5901,14 @@ ul.featured-list-wrapper li{
 }
 
 /* Owl Carousel lazy loading styles */
-.owl-carousel .owl-item img.lazy {
+/* .owl-carousel .owl-item img.lazy {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 
 .owl-carousel .owl-item img.lazy.loaded {
   opacity: 1;
-}
+} */
 
 /* === Lazy Loading Image Styles === */
 .lazy-image {
@@ -5967,14 +5930,14 @@ ul.featured-list-wrapper li{
   
 
 /* === Owl Carousel Custom Styles === */
-.owl-carousel .owl-item img.lazy-image {
+/* .owl-carousel .owl-item img.lazy-image {
   transition: opacity 0.5s ease-in-out;
 }
 
 .owl-carousel .owl-item img.lazy-image:not(.loaded) {
   min-height: 200px;
   background: #f5f5f5;
-}
+} */
 
 /* === Image Display Styles === */
 img {
@@ -5989,40 +5952,7 @@ img {
   display: inline-block;
 }
 
-/* .owl-carousel .owl-item img {
-  display: block;
-  width: 100%;
-  height: auto;
-} */
-
-/* .owl-carousel .owl-item img {
-  width: 751px;
-  height: 682px;
-  object-fit: cover;
-}
-
-.portfolio-carousel .item img {
-  width: 751px;
-  height: 682px;
-  object-fit: cover;
-}
-
-.projectSlider .item img {
-  width: 751px;
-  height: 682px;
-  object-fit: cover;
-}
-
-/* Add responsive styles for smaller screens */
-/* @media (max-width: 768px) {
-  .owl-carousel .owl-item img,
-  .portfolio-carousel .item img,
-  .projectSlider .item img,
-  #posts .post img {
-    height: auto;
-    aspect-ratio: 751/682;
-  }
-} */ 
+/* 
 .owl-carousel .item {
 	padding: 5px;
   }
@@ -6034,29 +5964,53 @@ img {
 	object-fit: contain;
 	display: block;
 	border-radius: 8px; /* optional: for rounded corners */
-	box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* optional visual boost */
-  }
-  .productSlider {
-	width: 100%;
-	max-width: 100vw;
-  }
+	/* box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* optional visual boost */
+  /* }  */ */
+ /* Ensure owl-carousel images in productSlider fill the container height */
+/* Full-size image without cropping for productSlider */
+.productSlider .owl-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productSlider .item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productSlider .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* This prevents cropping */
+  max-height: 85vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.productSlider {
+  height: 500px; /* or any value you want */
+}
+
 	
   /* Optional: fine-tune for small screens */
  
   /* === Mobile-Friendly Adjustments for Carousel Images === */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .owl-carousel .item img {
     max-width: 90%;
     height: auto;
     margin: 0 auto;
   }
-}
+} */
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .owl-carousel .item img {
     max-width: 85%;
   }
-}
+} */
 
   .clientSection .item img {
 	width: 100%;
