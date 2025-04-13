@@ -1,0 +1,137 @@
+/**
+ * Career Icons CSS Fix
+ * This stylesheet fixes the icon styling in the career page
+ */
+
+/* Fix for toggle icons */
+.elementor-toggle-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.elementor-tab-title {
+    padding: 15px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.elementor-tab-title:hover {
+    background-color: #f0f0f0;
+}
+
+.elementor-tab-content {
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.elementor-toggle-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.elementor-toggle-icon-closed {
+    display: block;
+}
+
+.elementor-toggle-icon-opened {
+    display: none;
+}
+
+.elementor-tab-title[aria-expanded="true"] .elementor-toggle-icon-closed {
+    display: none;
+}
+
+.elementor-tab-title[aria-expanded="true"] .elementor-toggle-icon-opened {
+    display: block;
+}
+
+/* Fix for menu icons */
+.action--menu,
+.action--close {
+    transition: opacity 0.3s ease;
+}
+
+.action--close {
+    opacity: 0;
+}
+
+.menu--open + .action--menu {
+    opacity: 0;
+}
+
+.menu--open + .action--close {
+    opacity: 1;
+}
+
+/* Fix for SVG icons */
+svg.icon {
+    width: 1.5em;
+    height: 1.5em;
+    display: block;
+    margin: 0 auto;
+    fill: currentColor;
+    transition: transform 0.3s ease;
+}
+
+svg.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Fix for icon alignment */
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fix for icon colors */
+.icon-primary {
+    color: #007bff;
+}
+
+.icon-secondary {
+    color: #6c757d;
+}
+
+.icon-success {
+    color: #28a745;
+}
+
+.icon-danger {
+    color: #dc3545;
+}
+
+.icon-warning {
+    color: #ffc107;
+}
+
+.icon-info {
+    color: #17a2b8;
+}
+
+/* Fix for icon sizes */
+.icon-sm {
+    width: 1em;
+    height: 1em;
+}
+
+.icon-lg {
+    width: 2em;
+    height: 2em;
+}
+
+.icon-xl {
+    width: 3em;
+    height: 3em;
+} 
