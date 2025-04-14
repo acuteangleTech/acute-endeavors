@@ -176,3 +176,26 @@ $(document).ready(function () {
     $closeBtn.css('opacity', 0);
   });
 });
+const modal = document.getElementById("projectModal");
+const closeModal = document.querySelector(".close");
+
+document.querySelectorAll(".open-modal-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const project = btn.closest(".portfolio-item");
+    document.getElementById("modalTitle").innerText = project.dataset.title;
+    document.getElementById("modalDescription").innerText = project.dataset.description;
+    document.getElementById("modalLink").href = project.dataset.link;
+    modal.style.display = "block";
+  });
+});
+
+closeModal.onclick = () => {
+  modal.style.display = "none";
+};
+
+window.onclick = (event) => {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+

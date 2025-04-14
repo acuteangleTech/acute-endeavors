@@ -4,6 +4,83 @@
  */
 
 /* Fix for toggle icons */
+.interview-process {
+    background: #f8f9fc;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: #7e00ff;
+    display: block;
+    margin: 10px auto 0;
+  }
+  .interview-process h2{
+    color:black;
+  }
+  
+  .section-intro {
+    text-align: center;
+    color: #666;
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    object-fit: contain;
+  }
+  
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+  }
+  
+  .step-box {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .step-box h4{
+    color: black;
+  }
+  .step-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .step-box img {
+    width: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .step-box h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .step-box p {
+    color: #555;
+    font-size: 0.95rem;
+  }
+  
 .elementor-toggle-item {
     margin-bottom: 10px;
     border: 1px solid #ddd;
@@ -24,7 +101,12 @@
 .elementor-tab-title:hover {
     background-color: #f0f0f0;
 }
-
+.elementor-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
 .elementor-tab-content {
     padding: 15px;
     background-color: #fff;
