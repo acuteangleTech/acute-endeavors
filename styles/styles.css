@@ -5982,20 +5982,20 @@ margin-left: 59px;
   }
 }
 
-.floating-buttons {
+/* .floating-buttons {
   right: 15px;
   bottom: 80px; /* Increased from ~20px to stay above bottom nav */
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   gap: 12px;
   z-index: 1000;
-}
+} */
 
-.floating-buttons a {
+/* .floating-buttons a {
   width: 75px;
   height: 75px;
  /* Default color */
-  color: white;
+  /* color: white;
   border-radius: 80%;
   display: flex;
   align-items: center;
@@ -6003,27 +6003,64 @@ margin-left: 59px;
   text-decoration: none;
   font-size: 25px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
-.floating-buttons a i {
+} */
+/* .floating-buttons a i {
   font-size: 25px; /* Adjust icon size for mobile */
-}
-.call-btn {
+/* } */ 
+/* .call-btn {
   background-color: #007bff; /* Blue */
-}
+ 
 
-.whatsapp-btn {
+/* .whatsapp-btn {
   background-color: #25D366; /* WhatsApp Green */
   
-}
+*/ */
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
  
 
   .floating-buttons a i {
     font-size: 25px; /* Adjust icon size for mobile */
-  }
-}
+  /* }
+}  */
 /* Lazy Loading Styles */
+/* .floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.floating-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;         /* Button size */
+  /* height: 160px;        /* Button size */
+  /* border-radius: 50%;    */
+/* 
+  color: white;
+  font-size: 26px;     /* Icon size */
+  /* text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, background-color 0.3s;
+}   */ 
+
+/* .call-btn {
+  background-color: #007bff; /* Blue for call */
+/* }
+
+.whatsapp-btn {
+  background-color: #25d366; /* WhatsApp green */
+/* } */
+
+/* .floating-buttons a:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+ 
+
 .lazy {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -6229,15 +6266,15 @@ img {
     position: fixed;
     right: 15px;
     bottom: 80px; /* Increased from ~20px to stay above bottom nav */
-    display: flex;
+     display: flex;
     flex-direction: column;
     gap: 12px;
     z-index: 1000;
-  }
+  } 
   
   .floating-buttons a {
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
    
     color: white;
     border-radius: 50%;
@@ -6247,6 +6284,16 @@ img {
     text-decoration: none;
     font-size: 18px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  } *
+  .call-btn {
+    background-color: #007bff; /* Blue for call */
+  }
+  
+  .whatsapp-btn {
+    background-color: #25d366; /* WhatsApp green */
+  }
+  .floating-buttons a i {
+    font-size: 30px; /* Increase this value to make the icon larger */
   }
   
   /* 3 Column Styles */
