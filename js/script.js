@@ -306,6 +306,7 @@ $(".projectSlider").owlCarousel({
   dots: true,
   autoplay: true,
   autoplayTimeout: 3000,
+  autoHeight: true,
   responsive: {
     0: { items: 1 },
     768: { items: 2 },
@@ -319,6 +320,7 @@ $(".productSlider").owlCarousel({
   nav: true,
   dots: true,
   autoplay: true,
+  autoHeight: true,
   autoplayTimeout: 3000,
   responsive: {
     0: { items: 1 },

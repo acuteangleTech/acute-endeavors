@@ -3,7 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="styles/styles.css" />
-  
+
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel='stylesheet' id='filterable-portfolio-css'
@@ -20,6 +20,7 @@
 
   <!-- Bootstrap 5 JS (with Popper.js for dropdowns/carousels etc.) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 
   <style>
     img.lazy {
@@ -94,8 +95,9 @@
 
 </head>
 
-<body class="home page-template page-template-front-page page-template-front-page-php page page-id-64 loftloader-lite-enabled elementor-default elementor-kit-1137">
-  
+<body
+  class="home page-template page-template-front-page page-template-front-page-php page page-id-64 loftloader-lite-enabled elementor-default elementor-kit-1137">
+
   <!-- Preloader -->
   <div id="loftloader-wrapper" class="pl-beating" data-show-close-time="15000" data-max-load-time="0">
     <div class="loader-section section-fade"></div>
@@ -118,22 +120,22 @@
         <path
           d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z" />
       </symbol>
-           <!-- <svg id="icon-github" viewBox="0 0 33 33">
+      <svg id="icon-github" viewBox="0 0 33 33">
             <title>github</title>
             <path
                 d="M16.608.455C7.614.455.32 7.748.32 16.745c0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.353 1.112-.785 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.882-1.809-2.383-1.809-2.383-1.479-1.01.112-.99.112-.99 1.635.115 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.353.148-1.052.569-1.77 1.034-2.177-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.233 1.677-4.371-.168-.412-.727-2.069.16-4.311 0 0 1.367-.438 4.479 1.67a15.602 15.602 0 0 1 4.078-.549 15.62 15.62 0 0 1 4.078.549c3.11-2.108 4.475-1.67 4.475-1.67.889 2.242.33 3.899.163 4.311C26.37 12.66 27 14.115 27 15.893c0 6.258-3.809 7.635-7.437 8.038.584.503 1.105 1.497 1.105 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.294.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29">
             </path>
-        </svg> -->
-        <symbol id="icon-menu" viewBox="0 0 119 25">
-          <title>menu</title>
-          <path d="M36,8 L36,0 L100,0 L100,8 L36,8 Z M0,8 L0,0 L24,0 L24,8 L0,8 Z M0,28 L0,20 L71,20 L71,28 L0,28 Z" />
-        </symbol>
-        <symbol id="icon-close" viewBox="0 0 24 24">
-          <title>close</title>
-          <path
-            d="M24 1.485L22.515 0 12 10.515 1.485 0 0 1.485 10.515 12 0 22.515 1.485 24 12 13.484 22.515 24 24 22.515 13.484 12z" />
-        </symbol>
-      </svg>
+        </svg>
+      <symbol id="icon-menu" viewBox="0 0 119 25">
+        <title>menu</title>
+        <path d="M36,8 L36,0 L100,0 L100,8 L36,8 Z M0,8 L0,0 L24,0 L24,8 L0,8 Z M0,28 L0,20 L71,20 L71,28 L0,28 Z" />
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <title>close</title>
+        <path
+          d="M24 1.485L22.515 0 12 10.515 1.485 0 0 1.485 10.515 12 0 22.515 1.485 24 12 13.484 22.515 24 24 22.515 13.484 12z" />
+      </symbol>
+    </svg>
 
     <main>
       <!-- Navigation -->
@@ -167,18 +169,28 @@
               <h3>Quick Links</h3>
               <a href="/clients.html" class="sidemenu__item"><span class="sidemenu__item-inner">Clients</span></a>
               <a href="blog.html" class="sidemenu__item"><span class="sidemenu__item-inner">Blog</span></a>
-              <a href="web-desgin-development/index.html" class="sidemenu__item"><span class="sidemenu__item-inner">Web Design & Development</span></a>
-              <a href="/digitalmarketing.html" class="sidemenu__item"><span class="sidemenu__item-inner">Digital Marketing</span></a>
-              <a href="/branding/index.html" class="sidemenu__item"><span class="sidemenu__item-inner">Branding</span></a>
-              <a href="/softwaredevelopment.html" class="sidemenu__item"><span class="sidemenu__item-inner">Software development</span></a>
+              <a href="web-desgin-development/index.html" class="sidemenu__item"><span class="sidemenu__item-inner">Web
+                  Design & Development</span></a>
+              <a href="/digitalmarketing.html" class="sidemenu__item"><span class="sidemenu__item-inner">Digital
+                  Marketing</span></a>
+              <a href="/branding/index.html" class="sidemenu__item"><span
+                  class="sidemenu__item-inner">Branding</span></a>
+              <a href="/softwaredevelopment.html" class="sidemenu__item"><span class="sidemenu__item-inner">Software
+                  development</span></a>
               <a href="/casestudy.html" class="sidemenu__item"><span class="sidemenu__item-inner">Case Study</span></a>
               <a href="/career.html" class="sidemenu__item"><span class="sidemenu__item-inner">Career</span></a>
             </div>
           </div>
         </div>
 
-        <button class="action action--menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button>
-        <button class="action action--close"><svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg></button>
+        <button class="action action--menu">
+          <svg class="icon icon--menu">
+            <use xlink:href="#icon-menu"></use>
+          </svg>
+        </button>
+        <button class="action action--close"><svg class="icon icon--close">
+            <use xlink:href="#icon-close"></use>
+          </svg></button>
       </nav>
     </main>
   </div>
@@ -194,7 +206,9 @@
           <div class="call">
             <div class="round round1">
               <svg width="65" height="67" viewBox="0 0 65 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M54.687 47.6469L16.8745 61.8991C10.0313 64.4784 2.96219 58.6825 4.15003 51.4665L10.7135 11.5938C11.9014 4.37786 20.4553 1.15373 26.1106 5.79043L57.3596 31.4109C63.0149 36.0476 61.5302 45.0676 54.687 47.6469Z" stroke="#6610f2" stroke-width="7" />
+                <path
+                  d="M54.687 47.6469L16.8745 61.8991C10.0313 64.4784 2.96219 58.6825 4.15003 51.4665L10.7135 11.5938C11.9014 4.37786 20.4553 1.15373 26.1106 5.79043L57.3596 31.4109C63.0149 36.0476 61.5302 45.0676 54.687 47.6469Z"
+                  stroke="#6610f2" stroke-width="7" />
               </svg>
             </div>
             <a href="contact-us.1.html" class="btn btn-danger hvr-sweep-to-right">Get In Touch</a>
@@ -233,269 +247,19 @@
         </a>
       </li>
       <li>
-        <a href="#icon-menu">
-          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 17.9998H14V29.9998H2V17.9998Z" fill="#6610F2"/>
-            <rect x="2" y="2" width="12" height="12" fill="#6610F2"/>
-            <rect x="18" y="18" width="12" height="12" fill="#6610F2"/>
-            <rect x="18" y="2" width="12" height="12" fill="#6610F2"/>
-          </svg>
+        <a class="action action-menu">
+          <img 
+            src="/assets/Menu Button.svg">
           <span>Menu</span>
         </a>
       </li>
     </ul>
   </div>
-  
-
-  <!-- <div class="mobileBottomNav">
-    <ul>
-      <li><a href="index.html"><img class="lazy" src="assets/home 1.svg">
-          <span>Home</span>
-        </a></li>
-      <li><a href="/service.html"><img class="lazy" src="assets/servives 1.svg">
-          <span>Services</span>
-        </a></li>$(document).ready(function () {
-  // Initialize Owl Carousel for the client section
-  $('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 20,
-    nav: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 2
-      },
-      600: {
-        items: 3
-      },
-      1000: {
-        items: 5
-      }
-    }
-  });
-
-  // Initialize Owl Carousel for product slider
-  $('.productSlider').owlCarousel({
-    loop: true,
-    margin: 20,
-    nav: true,
-    dots: false,
-    smartSpeed: 700,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1,
-        stagePadding: 0
-      },
-      768: {
-        items: 2,
-        stagePadding: 10 // Reduced padding = wider image
-      },
-      1200: {
-        items: 3,
-        stagePadding: 30
-      }
-    }
-  });
-
-  // Initialize Owl Carousel for client section
-  $('.clientSection .owl-carousel').owlCarousel({
-    loop: true,
-    margin: 20,
-    nav: false,
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 2500,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 2,
-        stagePadding: 0
-      },
-      600: {
-        items: 3
-      },
-      1000: {
-        items: 5
-      }
-    }
-  });
-
-  // Mobile menu functionality
-  const $menu = $('.menu');
-  const $menuItems = $('.menu__item-inner');
-  const $mainMenuLinks = $('.mainmenu__item');
-  const $sideMenuItems = $('.sidemenu__item-inner');
-  const $openBtn = $('.action--menu-small'); // Mobile menu button
-  const $closeBtn = $('.action--close'); // Close button in the modal
-
-  // Function to open menu
-  $openBtn.on('click', function () {
-    $menu.addClass('menu--open');
-
-    // Slide in menu items
-    $menuItems.each(function (i) {
-      $(this).delay(100 * i).animate({
-        transform: 'translate3d(0, 0, 0)'
-      }, {
-        duration: 500,
-        step: function (now, fx) {
-          $(this).css('transform', 'translate3d(0, 0, 0)');
-        }
-      });
-    });
-
-    // Fade in menu links
-    $mainMenuLinks.each(function (i) {
-      $(this).delay(200 * i).animate({ opacity: 1 }, 500);
-    });
-
-    // Show close button
-    $closeBtn.css('opacity', 1);
-  });
-
-  // Function to close menu
-  $closeBtn.on('click', function () {
-    $menu.removeClass('menu--open');
-
-    // Reset transforms and opacities
-    $menuItems.css('transform', 'translate3d(100%, 0, 0)');
-    $mainMenuLinks.css('opacity', 0);
-    $sideMenuItems.css('transform', 'translate3d(0, 100%, 0)');
-
-    // Hide close button
-    $closeBtn.css('opacity', 0);
-  });
-
-  // Close modal when clicking outside of the modal content
-  $(window).on('click', function (event) {
-    if ($(event.target).is($menu)) {
-      $menu.removeClass('menu--open'); // Hide the menu
-    }
-  });
-});
-
-      <li><a href="contact-us.1.html"><img class="lazy" src="assets/contact 1.svg">
-          <span>Contact</span>
-        </a></li>
-      <li><a href="/portfolio.html"><img class="lazy" src="assets/project 1.svg">
-          <span>Projects</span>
-        </a></li>
-      <li><a href="index.html#icon-menu"><img class="lazy" src="assets/Menu Button.svg">
-          <span>Menu</span>
-        </a></li>
-
-    </ul> -->
-  </div>
 
 
+ 
 
-  <!-- career list -->
-  <!-- Modal -->
-  <!-- <div class="modal fade getInTouch" id="careerModel" tabindex="-1" aria-labelledby="careerLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="careerLabel">Fill up the following details</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body contactRow">
 
-          <div class="wpcf7 no-js" id="wpcf7-f1239-o2" lang="en-US" dir="ltr" data-wpcf7-id="1239">
-            <div class="screen-reader-response">
-              <p role="status" aria-live="polite" aria-atomic="true"></p>
-              <ul></ul>
-            </div>
-            <form action="index.html#wpcf7-f1239-o2" method="post" class="wpcf7-form init" aria-label="Contact form"
-              enctype="multipart/form-data" novalidate="novalidate" data-status="init">
-              <div style="display: none;">
-                <input type="hidden" name="_wpcf7" value="1239" />
-                <input type="hidden" name="_wpcf7_version" value="6.0.1" />
-                <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1239-o2" />
-                <input type="hidden" name="_wpcf7_container_post" value="0" />
-                <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-              </div>
-              <div class="row contactRow">
-                <div class="col-md-6">
-                  <p><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" maxlength="400"
-                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
-                        aria-required="true" aria-invalid="false" placeholder="Full Name" value="" type="text"
-                        name="your-name" /></span>
-                  </p>
-                </div>
-                <div class="col-md-6">
-                  <p><span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40" maxlength="400"
-                        class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control"
-                        aria-required="true" aria-invalid="false" placeholder="Email" value="" type="email"
-                        name="your-email" /></span>
-                  </p>
-                </div>
-                <div class="col-md-6">
-                  <p><span class="wpcf7-form-control-wrap" data-name="phone"><input size="40" maxlength="400"
-                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
-                        aria-required="true" aria-invalid="false" placeholder="Phone" value="" type="text"
-                        name="phone" /></span>
-                  </p>
-                </div>
-                <div class="col-md-6">
-                  <p><span class="wpcf7-form-control-wrap" data-name="qualification"><input size="40" maxlength="400"
-                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
-                        aria-required="true" aria-invalid="false" placeholder="Qualification" value="" type="text"
-                        name="qualification" /></span>
-                  </p>
-                </div>
-                <div class="col-md-12">
-                  <p><span class="wpcf7-form-control-wrap" data-name="position"><select
-                        class="wpcf7-form-control wpcf7-select form-control" aria-invalid="false" name="position">
-                        <option value="Position type">Position type</option>
-                        <option value="Performance Marketer - Kochi">Performance Marketer - Kochi</option>
-                        <option value="Video Anchor (Female)- Kochi">Video Anchor (Female)- Kochi</option>
-                        <option value="Sr. SEO ANALYST - Kochi">Sr. SEO ANALYST - Kochi</option>
-                        <option value="Junior content writer (Female)- Kochi">Junior content writer (Female)- Kochi
-                        </option>
-                        <option value="Digital Marketing Intern">Digital Marketing Intern</option>
-                        <option value="REELS VIDEOGRAPHER CUM EDITOR">REELS VIDEOGRAPHER CUM EDITOR</option>
-                        <option value="Telesales Executive(Female)- Kochi">Telesales Executive(Female)- Kochi</option>
-                      </select></span>
-                  </p>
-                </div>
-                <div class="col-md-12">
-                  <p><span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="10"
-                        maxlength="2000" class="wpcf7-form-control wpcf7-textarea form-control" aria-invalid="false"
-                        placeholder="Message" name="your-message"></textarea></span>
-                  </p>
-                </div>
-                <div class="col-md-12 mb-4">
-                  <p><span class="wpcf7-form-control-wrap" data-name="file-46"><input size="40"
-                        class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required" accept=".jpg,.doc,.pdf,.txt"
-                        aria-required="true" aria-invalid="false" type="file" name="file-46" /></span>
-                  </p>
-                </div>
-                <div class="col-12">
-                  <p><input class="wpcf7-form-control wpcf7-submit has-spinner btn btn-primary" type="submit"
-                      value="Submit" />
-                  </p>
-                </div>
-              </div>
-              <p style="display: none !important;" class="akismet-fields-container" data-prefix="_wpcf7_ak_">
-                <label>&#916;<textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8"
-                    maxlength="100"></textarea></label><input type="hidden" id="ak_js_2" name="_wpcf7_ak_js"
-                  value="132" />
-                <script>document.getElementById("ak_js_2").setAttribute("value", (new Date()).getTime());</script>
-              </p>
-              <div class="wpcf7-response-output" aria-hidden="true"></div>
-            </form>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div> -->
   <section class="bannerSection">
     <div class="container">
       <div class="row">
@@ -526,88 +290,68 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12">
-          <h3 >Trusted by more than 50
+          <h3>Trusted by more than 50
             + Clients</h3>
 
 
-          <div class="owl-carousel owl-theme"
-            \
-            >
+          <div class="owl-carousel owl-theme" \>
             <div class="item">
-              <img 
-                src="assets/business.png" alt="" />
+              <img src="assets/business.png" alt="" />
             </div>
             <div class="item">
-              <img  style="background-color: #000;"
-                src="assets/c1.png" alt="" />
+              <img style="background-color: #000;" src="assets/c1.png" alt="" />
             </div>
             <div class="item">
-              <img 
-                src="assets/c2.png" alt="" />
+              <img src="assets/c2.png" alt="" />
             </div>
             <div class="item">
-              <img 
-                src="assets/c3.png" alt="" />
+              <img src="assets/c3.png" alt="" />
             </div>
             <div class="item">
-              <img 
-                src="assets/c4.png" alt="" />
+              <img src="assets/c4.png" alt="" />
             </div>
             <div class="item">
-              <img 
-                src="assets/c6.png" alt="" />
+              <img src="assets/c6.png" alt="" />
             </div>
             <div class="item">
-              <img 
-                src="assets/c7.png" alt="" />
+              <img src="assets/c7.png" alt="" />
             </div>
             <div class="item">
-              <img 
-                src="assets/c8.png" alt="" />
+              <img src="assets/c8.png" alt="" />
             </div>
             <div class="item">
-              <img 
-                src="assets/c9.png" alt="" />
+              <img src="assets/c9.png" alt="" />
             </div>
             <div class="item">
-              <img 
-                src="assets/c10.png" alt="" />
+              <img src="assets/c10.png" alt="" />
             </div>
             <!-- <div class="item">
               <img class="lazy"
                 src="/assets/c11.png" alt="" />
             </div> -->
             <div class="item">
-              <img 
-                src="assets/c13.png" alt="" />
+              <img src="assets/c13.png" alt="" />
             </div>
             <div class="item">
-              <img 
-                src="assets/c14.png" alt="" />
+              <img src="assets/c14.png" alt="" />
             </div>
             <div class="item">
-              <img 
-                src="assets/KSSIA.png" alt="" />
+              <img src="assets/KSSIA.png" alt="" />
             </div>
             <div class="item">
-              <img 
-                src="assets/HEF.png" alt="" />
+              <img src="assets/HEF.png" alt="" />
             </div>
             <div class="item">
-              <img 
-                src="assets/BOOK AERO.png" alt="" />
+              <img src="assets/BOOK AERO.png" alt="" />
             </div>
             <div class="item">
-              <img 
-                src="assets/AKCAF.png" alt="" />
+              <img src="assets/AKCAF.png" alt="" />
             </div>
             <div class="item">
-              <img 
-                src="assets/18771513.png" alt="" />
+              <img src="assets/18771513.png" alt="" />
             </div>
             <div class="item">
-              <img 
-                src="assets/cbs.svg" alt="" />
+              <img src="assets/cbs.svg" alt="" />
             </div>
 
 
@@ -620,7 +364,7 @@
       </div>
     </div>
   </section>
- 
+
 
   <section class="aboutSection">
     <div class="container">
@@ -1074,18 +818,23 @@
         </div>
       </div>
     </div>
+    <div class="protfolioSlider">
 
-    <div class="owl-carousel productSlider owl-theme">
-      <div class="item"><img src="assets/p1.png"  alt="Project 1"></div>
-      <div class="item"><img src="assets/p2.png"  alt="Project 2"></div>
-      <div class="item"><img src="assets/p3.png"  alt="Project 3"></div>
-      <div class="item"><img src="assets/p4.png"  alt="Project 4"></div>
-      <div class="item"><img src="assets/p5.png" alt="Project 5"></div>
-      <div class="item"><img src="assets/p6.png" alt="Project 6"></div>
-      <div class="item"><img src="assets/p7.png"  alt="Project 7"></div>
-      <div class="item"><img src="assets/p11.png"  alt="Project 8"></div>
+      <div class="owl-carousel productSlider owl-theme">
+        <div class="item"><img data-sizes="(max-width: 630px) 100vw, 630px" src="assets/p1.png" alt="Project 1"></div>
+        <div class="item"><img src="assets/p2.png" alt="Project 2"></div>
+        <div class="item"><img src="assets/p3.png" alt="Project 3"></div>
+        <div class="item"><img src="assets/p4.png" alt="Project 4"></div>
+        <div class="item"><img src="assets/p5.png" alt="Project 5"></div>
+        <div class="item"><img src="assets/p6.png" alt="Project 6"></div>
+        <div class="item"><img src="assets/p7.png" alt="Project 7"></div>
+        <div class="item"><img src="assets/p11.png" alt="Project 8"></div>
+      </div>
     </div>
   </section>
+
+
+  
 
   <!-- Products Section -->
   <section class="aboutSection">
@@ -1105,10 +854,10 @@
     </div>
 
     <div class="owl-carousel productSlider owl-theme">
-      <div class="item"><img src="assets/KHEDMAH.jpeg"  alt="Product 1"></div>
-      <div class="item"><img src="assets/EXPEN.jpeg"  alt="Product 2"></div>
-      <div class="item"><img src="assets/EV.jpeg"  alt="Product 3"></div>
-      <div class="item"><img src="assets/BUSINE (2).jpeg"  alt="Product 4"></div>
+      <div class="item"><img src="assets/KHEDMAH.jpeg" alt="Product 1"></div>
+      <div class="item"><img src="assets/EXPEN.jpeg" alt="Product 2"></div>
+      <div class="item"><img src="assets/EV.jpeg" alt="Product 3"></div>
+      <div class="item"><img src="assets/BUSINE (2).jpeg" alt="Product 4"></div>
     </div>
   </section>
 
@@ -1151,17 +900,18 @@
             </p>
           </div>
         </a>
-      
+
         <a class="col-lg-3 col-6 sitems sitem2"
           data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
           <div class="sItem">
-            
-            <img  src="assets/build-1.svg" alt="Build">
+
+            <img src="assets/build-1.svg" alt="Build">
             <h3>Build</h3>
-            <p>We give life to the design we developed through proper development Process and other essential services.</p>
+            <p>We give life to the design we developed through proper development Process and other essential services.
+            </p>
           </div>
         </a>
-      
+
         <a class="col-lg-3 col-6 sitems sitem3"
           data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
           <div class="sItem">
@@ -1171,7 +921,7 @@
               visuals and design.</p>
           </div>
         </a>
-      
+
         <a class="col-lg-3 col-6 sitems sitem4"
           data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
           <div class="sItem">
@@ -1181,7 +931,7 @@
               to your website by identifying the target audience.</p>
           </div>
         </a>
-      
+
       </div>
       <section class="testimonialSection">
         <div class="spin spin1" data-anijs="if: scroll, on: window, do: fadeInDown animated, before: $scrollReveal">
@@ -1191,27 +941,28 @@
               stroke="#0d6efd" stroke-width="7" />
           </svg>
         </div>
-    
+
         <div class="container alignCenter">
-    
+
           <div class="row">
             <div class="col-lg-12">
-    
+
               <div class="titleSec">
                 <h1 data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">Feedback</h1>
-                <h2 data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">What Our Client’s<br>
+                <h2 data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">What Our
+                  Client’s<br>
                   Say about Acute Endeavors</h2>
               </div>
-    
+
             </div>
           </div>
-    
+
           <div class="row">
             <div class="col-lg-6">
-    
+
               <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel"
                 data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
-    
+
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -1224,46 +975,48 @@
                   <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4"
                     aria-label="Slide 5"></button>
                 </div>
-    
+
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="tesimonial">
-                      <img 
-                        src="assets/testimonial_1.jpg">
-                      <p>We have build a strong equation with Acute Endeavors and continuesly working with them for all our requirements. </p>
+                      <img src="assets/testimonial_1.jpg">
+                      <p>We have build a strong equation with Acute Endeavors and continuesly working with them for all
+                        our requirements. </p>
                       <h5>PG Ramnath</h5>
                       <h6>CEO – GOEC</h6>
                       <img src="assets/qu.png">
-    
+
                     </div>
-    
+
                   </div>
-    
-    
+
+
                   <div class="carousel-item">
                     <div class="tesimonial">
                       <img src="assets/testimonial_2.jpg">
-                      <p>The team has a strong vision and has been vital for the growth of Thissure IT Park Coworking in Thrissur.</p>
+                      <p>The team has a strong vision and has been vital for the growth of Thissure IT Park Coworking in
+                        Thrissur.</p>
                       <h5>KK Janardhanan</h5>
                       <h6>MD - TIP</h6>
                       <img src="assets/qu.png">
-    
+
                     </div>
                   </div>
-    
-    
+
+
                   <div class="carousel-item">
                     <div class="tesimonial">
                       <img src="assets/testimonial_3.jpg">
-                      <p>The team did an extraordinary job bringing into life my dream website. Highly recommend their services</p>
+                      <p>The team did an extraordinary job bringing into life my dream website. Highly recommend their
+                        services</p>
                       <h5>Dr. Viukram Jayaprakash</h5>
                       <h6>CS ATLANTIS MEDICALS - MELBOURNE</h6>
                       <img src="assets/qu.png">
-    
+
                     </div>
                   </div>
-    
-    
+
+
                   <div class="carousel-item">
                     <div class="tesimonial">
                       <img src="assets/testimonial_4.jpg">
@@ -1271,19 +1024,19 @@
                       <h5>Raghav Arora</h5>
                       <h6>CEO - ZEON INNOVATIONS</h6>
                       <img src="assets/qu.png">
-    
+
                     </div>
                   </div>
-    
+
                 </div>
               </div>
-    
-    
-    
+
+
+
             </div>
-    
-    
-    
+
+
+
             <!-- <div class="col-lg-6 testimonialLeft videoTestimonial"
               data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
                <img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://teknoppy.com/wp-content/themes/teknoppy/images/testimonial.png">
@@ -1323,30 +1076,30 @@
     
             </div> -->
           </div>
-    
+
         </div>
       </section>
-    
 
 
 
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var videoFrames = document.querySelectorAll('.video-frame');
 
-      document.getElementById('videoCarousel').addEventListener('slide.bs.carousel', function () {
-        for (var i = 0; i < videoFrames.length; i++) {
-          var videoFrame = videoFrames[i];
-          var videoSrc = videoFrame.src;
-          videoFrame.src = '';
-          videoFrame.src = videoSrc;
-        }
-      });
-    });
-  </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var videoFrames = document.querySelectorAll('.video-frame');
 
-  <!-- <section class="blogSection">
+          document.getElementById('videoCarousel').addEventListener('slide.bs.carousel', function () {
+            for (var i = 0; i < videoFrames.length; i++) {
+              var videoFrame = videoFrames[i];
+              var videoSrc = videoFrame.src;
+              videoFrame.src = '';
+              videoFrame.src = videoSrc;
+            }
+          });
+        });
+      </script>
+
+      <!-- <section class="blogSection">
     <div class="container alignCenter">
       <div class="row">
         <div class="col-md-6">
@@ -1416,182 +1169,204 @@
 
   </section> -->
 
-  <section class="contactSection contactSecBottom"
-  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
-  <div class="container-fluid px-0">
-    <div class="row contactBg mx-0">
-      <div class="col-md-8 formLeft">
-        <div class="col-md-12">
-          <h2>Get a Consultation From Our Expert</h2>
-        </div>
+      <section class="contactSection contactSecBottom"
+        data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <div class="container-fluid px-0">
+          <div class="row contactBg mx-0">
+            <div class="col-md-8 formLeft">
+              <div class="col-md-12">
+                <h2>Get a Consultation From Our Expert</h2>
+              </div>
 
-        <div class="form-wrapper" id="form-wrapper">
-          <div class="screen-reader-response">
-            <p role="status" aria-live="polite" aria-atomic="true"></p>
-            <ul></ul>
-          </div>
-          <form id="contact-form" action="https://api.web3forms.com/submit" method="post" class="form-init" novalidate>
-            <input type="hidden" name="access_key" value="f61c251c-7920-463f-98bd-95629ed8ae9b">
-            <input type="checkbox" name="botcheck" style="display: none;">
-            <input type="hidden" name="subject" value="Consultation Request">
+              <div class="form-wrapper" id="form-wrapper">
+                <div class="screen-reader-response">
+                  <p role="status" aria-live="polite" aria-atomic="true"></p>
+                  <ul></ul>
+                </div>
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="post" class="form-init"
+                  novalidate>
+                  <input type="hidden" name="access_key" value="f61c251c-7920-463f-98bd-95629ed8ae9b">
+                  <input type="checkbox" name="botcheck" style="display: none;">
+                  <input type="hidden" name="subject" value="Consultation Request">
 
-            <div class="col-md-12">
-              <p><span class="form-control-wrap" data-name="name">
-                  <input size="40" maxlength="400" class="form-control" aria-required="true" aria-invalid="false"
-                    placeholder="Full Name" value="" type="text" name="name" />
-                </span></p>
+                  <div class="col-md-12">
+                    <p><span class="form-control-wrap" data-name="name">
+                        <input size="40" maxlength="400" class="form-control" aria-required="true" aria-invalid="false"
+                          placeholder="Full Name" value="" type="text" name="name" />
+                      </span></p>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p><span class="form-control-wrap" data-name="email">
+                          <input size="40" maxlength="400" class="form-control" aria-required="true"
+                            aria-invalid="false" placeholder="Email" value="" type="email" name="email" />
+                        </span></p>
+                    </div>
+                    <div class="col-md-6">
+                      <p><span class="form-control-wrap" data-name="phone">
+                          <input size="40" maxlength="400" class="form-control" aria-required="true"
+                            aria-invalid="false" placeholder="Phone" value="" type="text" name="phone" />
+                        </span></p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <p><span class="form-control-wrap" data-name="message">
+                        <textarea cols="40" rows="10" maxlength="2000" class="form-control" aria-invalid="false"
+                          placeholder="Message" name="message"></textarea>
+                      </span></p>
+                  </div>
+
+                  <div class="col-12">
+                    <p><input class="btn btn-primary" type="submit" value="Submit" /></p>
+                  </div>
+
+                  <div class="response-output" aria-hidden="true"></div>
+                </form>
+              </div>
             </div>
 
+            <div class="col-md-4 contactPerson">
+              <h3>Rashin</h3>
+              <h4>Sales Manager</h4>
+              <p>Communicate with our experts to bring out better solutions to your problem.</p>
+              <div class="call2">
+                <img class="lazy" src="https://teknoppy.com/wp-content/themes/teknoppy/images/call2.svg">
+                +91 8289878342
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <footer>
+        <div class="footerSection">
+          <div class="container">
+
+
+
+            <!-- Footer Main Sections -->
             <div class="row">
-              <div class="col-md-6">
-                <p><span class="form-control-wrap" data-name="email">
-                    <input size="40" maxlength="400" class="form-control" aria-required="true" aria-invalid="false"
-                      placeholder="Email" value="" type="email" name="email" />
-                  </span></p>
+              <!-- Address -->
+              <div class="col-md-3 fItem px-3"
+                data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+                <h3>Address</h3>
+                <p>
+                  Acute Endeavors Private Limited, dewSpace Business Center, Paramara Road, Near North Railway Station,
+                  Kochi, Kerala, India - 682018<br><br>
+                  Acute Endeavors Private Limited, Prakash Presidium, 110, M G Road, Nungambakkam S.O, Chennai, Tamil
+                  Nadu,
+                  India - 600034
+                </p>
+                <b><a href="tel:+918289878342">+91 8289878342</a></b><br>
+                <a href="mailto:info@acutendeavors.com">info@acutendeavors.com</a>
               </div>
-              <div class="col-md-6">
-                <p><span class="form-control-wrap" data-name="phone">
-                    <input size="40" maxlength="400" class="form-control" aria-required="true" aria-invalid="false"
-                      placeholder="Phone" value="" type="text" name="phone" />
-                  </span></p>
+
+              <!-- Services -->
+              <div class="col-md-6 fItem fService px-3"
+                data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+                <h3>Services</h3>
+                <ul>
+                  <li><a href="/businessBluePrint.html">Business Strategy Blueprint</a></li>
+                  <li><a href="web-desgin-development/index.html">Web Design & Development</a></li>
+                  <li><a href="/branding/index.html">Branding</a></li>
+                  <li><a href="/mobileAppDev.html">Mobile app development</a></li>
+                  <li><a href="/digitalmarketing.html">Digital marketing</a></li>
+                  <li><a href="/softwaredevelopment.html">Software development</a></li>
+                </ul>
+              </div>
+
+              <!-- Quick Links -->
+              <div class="col-md-3 fItem px-3"
+                data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/about.html">About Us</a></li>
+                  <li><a href="/service.html">Services</a></li>
+                  <li><a href="/portfolio.html">Portfolio</a></li>
+                  <li><a href="/casestudy.html">Case Study</a></li>
+                  <li><a href="/contact-us.html">Contact Us</a></li>
+                  <li><a href="/career.html">Career</a></li>
+                </ul>
               </div>
             </div>
 
-            <div class="col-md-12">
-              <p><span class="form-control-wrap" data-name="message">
-                  <textarea cols="40" rows="10" maxlength="2000" class="form-control" aria-invalid="false"
-                    placeholder="Message" name="message"></textarea>
-                </span></p>
-            </div>
-
-            <div class="col-12">
-              <p><input class="btn btn-primary" type="submit" value="Submit" /></p>
-            </div>
-
-            <div class="response-output" aria-hidden="true"></div>
-          </form>
+          </div>
         </div>
-      </div>
+      </footer>
 
-      <div class="col-md-4 contactPerson">
-        <h3>Rashin</h3>
-        <h4>Sales Manager</h4>
-        <p>Communicate with our experts to bring out better solutions to your problem.</p>
-        <div class="call2">
-          <img class="lazy" src="https://teknoppy.com/wp-content/themes/teknoppy/images/call2.svg">
-          +91 8289878342
-        </div>
-      </div>
     </div>
-  </div>
-</section>
-
-
-  <footer>
-    <div class="footerSection">
-      <div class="container">
-
-
-
-        <!-- Footer Main Sections -->
-        <div class="row">
-          <!-- Address -->
-          <div class="col-md-3 fItem px-3"
-            data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
-            <h3>Address</h3>
-            <p>
-              Acute Endeavors Private Limited, dewSpace Business Center, Paramara Road, Near North Railway Station,
-              Kochi, Kerala, India - 682018<br><br>
-              Acute Endeavors Private Limited, Prakash Presidium, 110, M G Road, Nungambakkam S.O, Chennai, Tamil Nadu,
-              India - 600034
-            </p>
-            <b><a href="tel:+918289878342">+91 8289878342</a></b><br>
-            <a href="mailto:info@acutendeavors.com">info@acutendeavors.com</a>
-          </div>
-
-          <!-- Services -->
-          <div class="col-md-6 fItem fService px-3"
-            data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
-            <h3>Services</h3>
-            <ul>
-              <li><a href="/businessBluePrint.html">Business Strategy Blueprint</a></li>
-              <li><a href="web-desgin-development/index.html">Web Design & Development</a></li>
-              <li><a href="/branding/index.html">Branding</a></li>
-              <li><a href="/mobileAppDev.html">Mobile app development</a></li>
-              <li><a href="/digitalmarketing.html">Digital marketing</a></li>
-              <li><a href="/softwaredevelopment.html">Software development</a></li>
-            </ul>
-          </div>
-
-          <!-- Quick Links -->
-          <div class="col-md-3 fItem px-3"
-            data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/about.html">About Us</a></li>
-              <li><a href="/service.html">Services</a></li>
-              <li><a href="/portfolio.html">Portfolio</a></li>
-              <li><a href="/casestudy.html">Case Study</a></li>
-              <li><a href="/contact-us.html">Contact Us</a></li>
-              <li><a href="/career.html">Career</a></li>
-            </ul>
-          </div>
+    </div>
+    <div class="container copyrightSection">
+      <div class="row" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <div class="col-md-6">
+          Copyright © 2025 Acute Endeavors. All Rights Reserved.
+        </div>
+        <div class="col-md-6 copyRight">
+          <a href="index.html#">Terms of Use</a> | <a href="index.html#">Privacy Policy</a>
         </div>
 
       </div>
     </div>
-  </footer>
 
-  </div>
-  </div>
-  <div class="container copyrightSection">
-    <div class="row" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
-      <div class="col-md-6">
-        Copyright © 2025 Acute Endeavors. All Rights Reserved.
-      </div>
-      <div class="col-md-6 copyRight">
-        <a href="index.html#">Terms of Use</a> | <a href="index.html#">Privacy Policy</a>
-      </div>
-
+    </footer>
+    <div class="floating-buttons">
+      <a href="tel:+91 8289878342" class="call-btn" target="_blank" title="Call">
+        <i class="fas fa-phone"></i>
+      </a>
+      <a href="https://wa.me/8289878342" class="whatsapp-btn" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
     </div>
-  </div>
 
-  </footer>
-  <div class="floating-buttons">
-    <a href="tel:+91 8289878342" class="call-btn" target="_blank" title="Call">
-      <i class="fas fa-phone"></i>
-    </a>
-    <a href="https://wa.me/8289878342" class="whatsapp-btn" target="_blank" title="WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-  </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  // Get all menu toggle buttons
+  const menuButtons = document.querySelectorAll('.action-menu');
+  const closeButton = document.querySelector('.action--close');
+  const menu = document.querySelector('.menu');
+  
+  // Add click event to all menu buttons
+  menuButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      menu.classList.add('menu--open');
+    });
+  });
+  
+  // Close menu when close button is clicked
+  closeButton.addEventListener('click', function() {
+    menu.classList.remove('menu--open');
+  });
+});
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-  <!-- Owl Carousel JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
 
-  <script src="/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-  <script src="/js/bootstrap.min.js"
-    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-    crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
- 
-  <script src="/styles/css/owl.carousel.js"></script>
+    <script src="/styles/css/owl.carousel.js"></script>
 
-  <!-- External Scripts -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="wp-includes/js/imagesloaded.min.js@ver=5.0.0" id="imagesloaded-js"></script>
-  <script async src="/js/lazyload.min.js"></script>
-  <script src="script.js"></script>
+    <!-- External Scripts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="wp-includes/js/imagesloaded.min.js@ver=5.0.0" id="imagesloaded-js"></script>
+    <script async src="/js/lazyload.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
