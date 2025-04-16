@@ -73,54 +73,116 @@ $(document).ready(function () {
   const $menu = $('.menu');
   const $menuItems = $('.menu__item-inner');
   const $mainMenuLinks = $('.mainmenu__item');
-  const $sideMenuItems = $('.sidemenu__item-inner');
-  const $openBtn = $('.action--menu');
+  const $sideMenuLinks = $('.sidemenu__item-inner');
+  const $openBtn = $('.action--menu, .action-menu');
   const $closeBtn = $('.action--close');
+  const $body = $('body');
+  const $mobileNav = $('.mobileBottomNav');
 
   // Function to open menu
-  $openBtn.on('click', function () {
+  function openMenu() {
     $menu.addClass('menu--open');
+    $body.addClass('nav-active');
+    $body.css('overflow', 'hidden');
+    $mobileNav.fadeOut(300);
 
-    // Slide in menu items
+    // Slide in menu items with improved animation
     $menuItems.each(function (i) {
-      $(this).delay(100 * i).animate({
-        transform: 'translate3d(0,0,0)'
-      }, {
-        duration: 500,
-        step: function (now, fx) {
-          $(this).css('transform', 'translate3d(0,0,0)');
-        }
+      $(this).css({
+        'transform': 'translate3d(0,0,0)',
+        'transition': 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) ' + (i * 0.1) + 's'
       });
     });
 
-    // Fade in menu links
+    // Fade in menu links with improved timing
     $mainMenuLinks.each(function (i) {
-      $(this).delay(200 * i).animate({ opacity: 1 }, 500);
-    });
-
-    $sideMenuItems.each(function (i) {
-      $(this).delay(300 * i).animate({ transform: 'translate3d(0,0,0)' }, {
-        duration: 500,
-        step: function (now, fx) {
-          $(this).css('transform', 'translate3d(0,0,0)');
-        }
+      $(this).css({
+        'opacity': '1',
+        'transition': 'opacity 0.5s ease ' + (i * 0.1) + 's'
       });
     });
 
-    // Show close button
-    $closeBtn.css('opacity', 1);
-  });
+    $sideMenuLinks.each(function (i) {
+      $(this).css({
+        'transform': 'translate3d(0,0,0)',
+        'transition': 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) ' + (i * 0.1) + 's'
+      });
+    });
+
+    // Show close button with fade effect
+    $closeBtn.css({
+      'opacity': '1',
+      'transition': 'opacity 0.3s ease'
+    });
+  }
 
   // Function to close menu
-  $closeBtn.on('click', function () {
+  function closeMenu() {
     $menu.removeClass('menu--open');
+    $body.removeClass('nav-active');
+    $body.css('overflow', '');
+    $mobileNav.fadeIn(300);
 
-    // Reset transforms and opacities
-    $menuItems.css('transform', 'translate3d(100%,0,0)');
-    $mainMenuLinks.css('opacity', 0);
-    $sideMenuItems.css('transform', 'translate3d(0,100%,0)');
+    // Reset transforms and opacities with transitions
+    $menuItems.css({
+      'transform': 'translate3d(100%,0,0)',
+      'transition': 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)'
+    });
 
-    // Hide close button
-    $closeBtn.css('opacity', 0);
+    $mainMenuLinks.css({
+      'opacity': '0',
+      'transition': 'opacity 0.5s ease'
+    });
+
+    $sideMenuLinks.css({
+      'transform': 'translate3d(0,100%,0)',
+      'transition': 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)'
+    });
+
+    // Hide close button with fade effect
+    $closeBtn.css({
+      'opacity': '0',
+      'transition': 'opacity 0.3s ease'
+    });
+  }
+
+  // Event listeners with improved touch handling
+  $openBtn.on('click touchstart', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    if (!$menu.hasClass('menu--open')) {
+      openMenu();
+    }
   });
+
+  $closeBtn.on('click touchstart', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    if ($menu.hasClass('menu--open')) {
+      closeMenu();
+    }
+  });
+
+  // Close menu when clicking outside
+  $(document).on('click touchstart', function(e) {
+    if ($menu.hasClass('menu--open') && 
+        !$(e.target).closest('.menu').length && 
+        !$(e.target).closest('.action--menu').length &&
+        !$(e.target).closest('.action-menu').length) {
+      closeMenu();
+    }
+  });
+
+  // Close menu on escape key
+  $(document).on('keyup', function(e) {
+    if (e.key === 'Escape' && $menu.hasClass('menu--open')) {
+      closeMenu();
+    }
+  });
+
+  // Initialize menu state
+  if ($menu.hasClass('menu--open')) {
+    $body.css('overflow', 'hidden');
+    $mobileNav.hide();
+  }
 });
