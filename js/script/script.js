@@ -84,13 +84,17 @@ $(document).ready(function () {
     $menu.addClass('menu--open');
     $body.addClass('nav-active');
     $body.css('overflow', 'hidden');
-    $mobileNav.fadeOut(300);
+    
+    // Only hide mobile nav on mobile screens
+    if ($(window).width() < 768) {
+      $mobileNav.fadeOut(300);
+    }
 
     // Slide in menu items with improved animation
     $menuItems.each(function (i) {
       $(this).css({
         'transform': 'translate3d(0,0,0)',
-        'transition': 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) ' + (i * 0.1) + 's'
+        'transition': 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1) ' + (i * 0.1) + 's'
       });
     });
 
@@ -105,14 +109,15 @@ $(document).ready(function () {
     $sideMenuLinks.each(function (i) {
       $(this).css({
         'transform': 'translate3d(0,0,0)',
-        'transition': 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) ' + (i * 0.1) + 's'
+        'transition': 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1) ' + (i * 0.1) + 's'
       });
     });
 
     // Show close button with fade effect
     $closeBtn.css({
       'opacity': '1',
-      'transition': 'opacity 0.3s ease'
+      'transition': 'opacity 0.3s ease',
+      'pointer-events': 'auto'
     });
   }
 
@@ -121,12 +126,16 @@ $(document).ready(function () {
     $menu.removeClass('menu--open');
     $body.removeClass('nav-active');
     $body.css('overflow', '');
-    $mobileNav.fadeIn(300);
+    
+    // Only show mobile nav on mobile screens
+    if ($(window).width() < 768) {
+      $mobileNav.fadeIn(300);
+    }
 
     // Reset transforms and opacities with transitions
     $menuItems.css({
       'transform': 'translate3d(100%,0,0)',
-      'transition': 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)'
+      'transition': 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)'
     });
 
     $mainMenuLinks.css({
@@ -136,13 +145,14 @@ $(document).ready(function () {
 
     $sideMenuLinks.css({
       'transform': 'translate3d(0,100%,0)',
-      'transition': 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)'
+      'transition': 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)'
     });
 
     // Hide close button with fade effect
     $closeBtn.css({
       'opacity': '0',
-      'transition': 'opacity 0.3s ease'
+      'transition': 'opacity 0.3s ease',
+      'pointer-events': 'none'
     });
   }
 
@@ -183,6 +193,29 @@ $(document).ready(function () {
   // Initialize menu state
   if ($menu.hasClass('menu--open')) {
     $body.css('overflow', 'hidden');
-    $mobileNav.hide();
+    if ($(window).width() < 768) {
+      $mobileNav.hide();
+    }
+  } else {
+    if ($(window).width() >= 768) {
+      $mobileNav.hide();
+      $('.action--menu').show();
+    } else {
+      $mobileNav.show();
+      $('.action--menu').hide();
+    }
   }
+
+  // Handle screen resize
+  $(window).on('resize', function() {
+    if ($(window).width() >= 768) {
+      $mobileNav.hide();
+      $('.action--menu').show();
+    } else {
+      if (!$menu.hasClass('menu--open')) {
+        $mobileNav.show();
+        $('.action--menu').hide();
+      }
+    }
+  });
 });
