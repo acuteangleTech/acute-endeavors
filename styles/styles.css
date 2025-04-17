@@ -686,19 +686,87 @@ main {
   
 
 }
-.action--menu {
+
+.action--close {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 10000; /* High enough to be on top */
+  right: 3rem;
+  top: 3rem;
+  z-index: 10000;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: rgba(255, 255, 255, 0.9);
 }
+
+/* Hide close button initially */
+.action--close {
+  display: none;
+}
+
+.icon--menu,
+.icon--close {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #0d6efd;
+}
+
+/* Ensure menu button is visible on all backgrounds */
+/*+ .action--menu {
+  position: fixed !important;
+  right: 3rem !important;
+  top: 3rem !important;
+  z-index: 10000 !important;
+  width: 60px !important;
+  height: 60px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: none !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  cursor: pointer !important;
+  outline: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.icon--menu {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  display: block !important;
+  fill: #0d6efd !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+@media (max-width: 767px) {
+  .action--menu {
+    display: none !important;
+  }
+/* }* */
 
 
 .menu--open .action--menu {
   pointer-events: none;
   display: none;
 }
-
+.menu--open .action--close {
+ display: inline;
+ background-color: none;
+}
 .action--close {
   opacity: 0;
   padding: 0 0.5rem;
@@ -729,7 +797,7 @@ main {
   border-style: none;
   border: none !important;
   grid-gap: 0px;
-}
+} 
 
 
 
@@ -1855,6 +1923,14 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   .aboutSection p {
     text-align: justify;
     padding: 0 10px;
+    font-size: medium;
+  }
+  .aboutSection h3 {
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: #686868;
+    font-weight: bold;
+    font-size: larger;
+   
   }
 }
 .aboutSection .missionSec p{
@@ -2418,7 +2494,11 @@ color: #000;
 .copyRight{
 	text-align:center;
 } 
-
+@media (max-width: 767px){
+  .copyrightSection{
+    margin-bottom: 35px;
+  }
+}
 
 
 
@@ -5258,7 +5338,11 @@ margin-top: 13px;
     font-size: 11px; /* Reduced font size */
     color: #333;
   }
-  
+  @media (max-width: 767px){
+    .mobileBottomNav ul{
+height: 30px;
+    }
+  }
   .mobileBottomNav li img,
   .mobileBottomNav li svg {
     width: 20px; /* Reduced icon size */

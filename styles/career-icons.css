@@ -2,6 +2,28 @@
  * Career Icons CSS Fix
  * This stylesheet fixes the icon styling in the career page
  */
+ @media (max-width: 767px) {
+  .bannerSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px; /* or set the height you want */
+    text-align: center;
+  }
+
+  .bannerCaption {
+    width: 100%;
+  }
+
+  .bannerCaption h1 {
+   top: -150%;
+    font-size: 24px; /* optional for better readability */
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
 
 /* Fix for toggle icons */
 .interview-process {
