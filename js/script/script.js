@@ -67,14 +67,29 @@ $(document).ready(function () {
     }
   });
 });
+
 $('.owl-carousel').owlCarousel({
   loop: true,
-  margin: 10,
-  nav: false,      
-  dots: false,     
+  nav: false,
+  dots: false,
   autoplay: true,
-  autoplayTimeout: 1500, 
-  smartSpeed: 500,       
- 
-
+  autoplayTimeout: 2500,
+  smartSpeed: 500,
+  autoplayHoverPause: true,
+  center: false, 
+  responsive: {
+    0: {
+      items: 1,           // ✅ One full image on mobile
+      margin: 0,
+      stagePadding: 0     // ✅ No left/right offset
+    },
+    600: {
+      items: 2,
+      margin: 10
+    },
+    1000: {
+      items: 3,
+      margin: 20
+    }
+  }
 });

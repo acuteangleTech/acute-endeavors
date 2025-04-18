@@ -712,11 +712,12 @@ main {
   display: none;
 }
 
-.icon--menu,
-.icon--close {
+.icon--menu
+ {
   width: 2.5rem;
   height: 2.5rem;
   fill: #0d6efd;
+ 
 }
 
 /* Ensure menu button is visible on all backgrounds */
@@ -778,8 +779,8 @@ main {
 }
 
 .icon--close {
-  color: rgb(33, 23, 227);
- 
+  color: rgb(30, 15, 244);
+ font-size: 10px;
 }
 
 .menu {
@@ -5833,25 +5834,42 @@ ul.featured-list-wrapper li{
 .productSlider .owl-dots {
   display: none !important;
 }
-
-
-/* Carousel Styles */
-.owl-carousel {
-    position: relative;
-    overflow: hidden;
+.clientSection .owl-dots{
+  display: none !important;
+}
+.clientSection .owl-nav {
+  display: none !important;
+}
+/* Ensure image takes full width */
+.owl-carousel .item img {
+  width: 100% !important;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  
 }
 
+/* Carousel full width and hides overflow */
+.owl-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Optional - make sure no weird alignment happens */
 .owl-carousel .owl-stage {
-    display: flex;
-    align-items: center;
+  display: flex !important;
+  align-items: stretch !important;
 }
 
 .owl-carousel .owl-item {
-    float: left;
-    min-height: 1px;
-    -webkit-backface-visibility: hidden;
-    -webkit-tap-highlight-color: transparent;
-    position: relative;
+  float: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.owl-carousel .item {
+  width: 100%;
+  padding: 0;
 }
 
 /* Portfolio Filter */
@@ -5995,6 +6013,7 @@ ul.featured-list-wrapper li{
 
 .portfolio-carousel .owl-next {
   right: -20px;
+  
 }
 
 .portfolio-carousel .owl-prev:hover,
@@ -6003,10 +6022,7 @@ ul.featured-list-wrapper li{
   color: white !important;
 }
 
-.portfolio-carousel .owl-dots {
-  margin-top: 20px;
-  text-align: center;
-}
+
 
 .portfolio-carousel .owl-dot {
   width: 10px;
@@ -6015,6 +6031,8 @@ ul.featured-list-wrapper li{
   border-radius: 50%;
   background: #ddd !important;
   transition: all 0.3s ease;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .portfolio-carousel .owl-dot.active {
@@ -6335,7 +6353,7 @@ img {
 .productSlider .owl-stage,
 .productSlider .owl-item,
 .productSlider .item {
-  display: flex !important;
+ 
   align-items: center;
   justify-content: center;
   height: auto !important;
@@ -6344,7 +6362,7 @@ img {
 .productSlider .item img {
   max-width: 100%;
   max-height: 85vh;
-  width: auto;
+
   height: auto;
   object-fit: contain;
   border-radius: 8px;
