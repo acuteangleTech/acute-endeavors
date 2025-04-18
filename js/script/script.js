@@ -67,3 +67,14 @@ $(document).ready(function () {
     }
   });
 });
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: false,      
+  dots: false,     
+  autoplay: true,
+  autoplayTimeout: 1500, 
+  smartSpeed: 500,       
+ 
+
+});

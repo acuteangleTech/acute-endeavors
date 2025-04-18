@@ -778,8 +778,8 @@ main {
 }
 
 .icon--close {
-  color: #00f;
-  font-size: 20px;
+  color: rgb(33, 23, 227);
+ 
 }
 
 .menu {
@@ -6326,33 +6326,31 @@ img {
   /* }  */ */
  /* Ensure owl-carousel images in productSlider fill the container height */
 /* Full-size image without cropping for productSlider */
-.productSlider .owl-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.productSlider {
+  padding: 20px 0;
 }
 
+.productSlider .owl-carousel,
+.productSlider .owl-stage-outer,
+.productSlider .owl-stage,
+.productSlider .owl-item,
 .productSlider .item {
-  height: 100%;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
+  height: auto !important;
 }
 
 .productSlider .item img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* This prevents cropping */
+  max-width: 100%;
   max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.productSlider {
-  height: 500px; /* or any value you want */
-}
-
-	
   /* Optional: fine-tune for small screens */
  
   /* === Mobile-Friendly Adjustments for Carousel Images === */
