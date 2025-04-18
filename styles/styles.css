@@ -778,7 +778,8 @@ main {
 }
 
 .icon--close {
-  width: 1rem;
+  color: #00f;
+  font-size: 20px;
 }
 
 .menu {
@@ -5328,21 +5329,34 @@ margin-top: 13px;
     padding: 4px 0; /* Adjusted padding */
     margin: 0;
     list-style: none;
+    
   }
   
   .mobileBottomNav li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     text-decoration: none;
     font-size: 11px; /* Reduced font size */
     color: #333;
   }
   @media (max-width: 767px){
     .mobileBottomNav ul{
-height: 30px;
+align-items: center;
+justify-content: center;
+
+
+
     }
   }
+  /* ✅ Hide mobileBottomNav on screens wider than 768px */
+@media screen and (min-width: 768px) {
+  .mobileBottomNav {
+    display: none !important;
+  }
+}
+
   .mobileBottomNav li img,
   .mobileBottomNav li svg {
     width: 20px; /* Reduced icon size */
@@ -5364,9 +5378,9 @@ height: 30px;
   /* Menu button styling */
   .menu .action.action--menu {
     position: fixed;
-    bottom: 0px !important;
-    top: auto !important;
-    right: 3% !important;
+    bottom: 0px ;
+    top: auto;
+    right: 3% ;
     width: 60px;
     height: 55px;
   }
