@@ -1719,37 +1719,7 @@ img{
 	font-size: 32px;
 	color: #7B7B7B;
 }
-.bannerCaption h1{
-	font-family: 'MuseoSlab-700';
-	font-size: 125px;
-	color: #000;
-	position: relative;
-	display: inline-block;
-	z-index: 99;
-}
-.bannerCaption h1::before{
-	content: '';
-	position: absolute;
-	width: 149px;
-	height: 118px;
-	border-radius: 70px;
-	background-color: #0d6efd;
-	z-index: -1;
-	margin-top: 14px;
-	margin-left: -10px;
-}
 
-.bannerCaption h1::after{
-	content: '';
-	position: absolute;
-	width: 495px;
-	height: 118px;
-	border-radius: 70px;
-	background-color: #6610f2;
-	z-index: -1;
-	margin-top: 14px;
-	right: 155px;
-}
 
 #sidebar{
 	display: none !important;
@@ -1761,28 +1731,6 @@ img{
 	color: #000;
 }
 
-.bannerCaption .btn{
-	background-color: #0d6efd;
-	font-size: 23px;
-	font-weight: 600;
-	font-family: 'Open Sans', sans-serif;
-	border: none;
-	text-transform: uppercase;
-	padding: 14px 30px;
-	border-radius: 16px;
-	margin-top: 25px;
-	overflow: hidden;
-}
-
-.call .btn{
-	font-size: 15px;
-	background-color: #6610f2;
-	font-weight: 600;
-	font-family: 'Open Sans', sans-serif;
-	border: none;
-	text-transform: uppercase;
-	overflow: hidden;
-}
 
 
 .getInTouch .modal-dialog{
@@ -4874,7 +4822,7 @@ font-size: 40px;
 	}
 
 	.bannerCaption h1::before {
-		width: 87px;
+		width: 200px;
 		height: 55px;
 		margin-top: 10px;
 		margin-left: -2px;
@@ -6691,3 +6639,8 @@ body.nav-active .menu-icon__line:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
   width: 100%;
 }
+
+
+
+
+

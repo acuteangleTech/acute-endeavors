@@ -163,10 +163,11 @@ img{
 .bannerCaption h1::before{
 	content: '';
 	position: absolute;
-	width: 149px;
+	width: 360px;
 	height: 118px;
 	border-radius: 70px;
-	background-color: #0d6efd;
+	background-color: black;
+	color: white;
 	z-index: -1;
 	margin-top: 14px;
 	margin-left: -10px;
@@ -175,7 +176,7 @@ img{
 .bannerCaption h1::after{
 	content: '';
 	position: absolute;
-	width: 495px;
+	width: 445px;
 	height: 118px;
 	border-radius: 70px;
 	background-color: #6610f2;
@@ -195,7 +196,7 @@ img{
 }
 
 .bannerCaption .btn{
-	background-color: #0d6efd;
+	background-color: black;
 	font-size: 23px;
 	font-weight: 600;
 	font-family: 'Open Sans', sans-serif;
@@ -205,6 +206,19 @@ img{
 	border-radius: 16px;
 	margin-top: 25px;
 	overflow: hidden;
+}
+.bannerCaption .btn:hover{
+	background-color: white;
+	font-size: 23px;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+	border: 2px solid #6610f2;
+	text-transform: uppercase;
+	padding: 14px 30px;
+	border-radius: 16px;
+	margin-top: 25px;
+	overflow: hidden;
+	color: #6610f2;
 }
 
 .call .btn{
@@ -1154,7 +1168,7 @@ color: #000;
   .main{
 	width:330px !important;
 	height:330px !important;
-	border:1px solid #FFE8E1;
+	border:1px solid black;
 	position:absolute;
 	bottom:-60px; 
 	left:30px;
@@ -1887,7 +1901,7 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
 	}
 
 	.bannerCaption h1::before {
-		width: 120px;
+		width: 260px;
 		height: 76px;
 	}
 
@@ -1899,7 +1913,7 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
 	}
 
 	.pageHeader .bannerCaption h1::before {
-		height: 50px;
+		height: 100px;
 		margin-top: 11px;
 	}
 	.pageHeader .bannerCaption {
@@ -2243,7 +2257,7 @@ font-size: 40px;
 	}
 
 	.bannerCaption h1::before {
-		width: 89px;
+		width: 180px;
 		height: 53px;
 		margin-top: 9px;
 	}
@@ -2360,6 +2374,11 @@ font-size: 40px;
 	}
 	.bannerCaption {
 		font-size: 27px;
+	}
+	.bannerCaption h1::before {
+		width: 180px;
+		height: 53px;
+		margin-top: 9px;
 	}
 
 	.bannerCaption h1::before {
@@ -3193,7 +3212,7 @@ font-size: 40px;
 	}
 
 	.bannerCaption h1::before {
-		width: 87px;
+		width: 200px;
 		height: 55px;
 		margin-top: 10px;
 		margin-left: -2px;
@@ -3758,13 +3777,13 @@ font-size: 35px;
 	}
 
 	.bannerCaption h1::before {
-		width: 68px;
+		width: 120px;
     height: 39px;
     margin-top: 4px;
 	}
 
 	.bannerCaption h1::after {
-		width: 155px;
+		width: 140px;
 		height: 39px;
 		right: 55px;
 		margin-top: 4px;
