@@ -166,8 +166,7 @@ img{
 	width: 360px;
 	height: 118px;
 	border-radius: 70px;
-	background-color: black;
-	color: white;
+	
 	z-index: -1;
 	margin-top: 14px;
 	margin-left: -10px;
@@ -1267,12 +1266,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   }
 
 
-  .pageHeader .bannerCaption h1::before {
+  /* .pageHeader .bannerCaption h1::before {
     width: 60%;
     height: 68px;
     border-radius: 70px;
     background-color: #0d6efd;
-}
+} */
 
 .pageHeader .bannerCaption{
 	padding-top: 70px;
@@ -1282,6 +1281,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     margin-left: auto;
     margin-right: auto;
 }
+.logo img{
+	max-width: 169px;
+}
+
 
 .pageHeader .bannerCaption h1 {
     font-size: 80px;
@@ -1815,12 +1818,135 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
 	.pageHeaders .bannerCaption h1::before {
 		content: "";
 		display: block;
-		height: 104px;
-		margin-top: 7px;
-		width: 302px;
-		background-color: #0d6efd;
-		color: white;
+		height: 84px;
+		margin-top: -2px;
+		margin-left: 10px;
+		width: 200px;
+		/* background-color: #0d6efd; */
+		/* color: white; */
+	/* }
+	.row {
+		align-items: stretch; /* Make both columns equal height */
 	}
+	
+	.aboutImage {
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+		
+	}
+	
+	.aboutImage img {
+		width: 100%;
+    height: 21.3rem;
+    max-height: 100%;
+    margin-top: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	}
+	
+
+	
+
+.spriteSection {
+  padding: 100px 0;
+  background: linear-gradient(to bottom, #fff, #f5f5f5);
+  text-align: center;
+  position: relative;
+}
+
+.spriteSection .bannerCaption h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.spriteSection .bannerCaption p {
+  font-size: 20px;
+  color: #555;
+}
+
+
+
+.faq-highlight {
+	background-color: #007bff; /* Bright blue */
+	color: #fdfafa;
+	margin-top: 9px;               /* Keep text black */
+	font-weight: 900;          /* Bold */
+	border-radius: 40px;
+	padding: 4px 16px;
+	font-size: 4rem;
+	display: inline-block;
+	line-height: 1.2;
+}
+.career-highlight {
+	background-color: #007bff;
+	color: #fafafa;
+	margin-top: 9px;
+	font-weight: 900;
+	border-radius: 40px;
+	padding: 4px 16px;
+	font-size: 4rem;
+	display: inline-block;
+	line-height: 1.2;
+}
+.clients-highlight {
+	background-color: #007bff; /* Blue highlight */
+	color: #f4f1f1;            /* Dark text */
+	font-weight: 900;          /* Bold */
+	border-radius: 40px;
+	padding: 4px 16px;
+	font-size: 4rem;
+	display: inline-block;
+	line-height: 1.2;
+}
+.portfolio-highlight {
+	background-color: #007bff;
+	color: #fefefe;
+	font-weight: 900;
+	border-radius: 40px;
+	padding: 4px 16px;
+	font-size: 4rem;
+	display: inline-block;
+	line-height: 1.2;
+}
+.product-highlight {
+	background-color: #007bff;
+	color: #faf4f4;
+	font-weight: 900;
+	border-radius: 40px;
+	padding: 4px 16px;
+	font-size: 4rem;
+	display: inline-block;
+	line-height: 1.2;
+}
+.service-highlight {
+	background-color: #007bff;
+	color: #f9f4f4;
+	font-weight: 900;
+	border-radius: 40px;
+	padding: 4px 16px;
+	font-size: 4rem;
+	display: inline-block;
+	line-height: 1.2;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .spriteSection .bannerCaption h1 {
+    font-size: 36px;
+  }
+  .spriteSection .bannerCaption p {
+    font-size: 16px;
+  }
+	
+}
 
 
 	.eBookBg .titleSec h2{
@@ -1939,8 +2065,9 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
 	}
 
 	.pageHeader .bannerCaption h1::before {
-		height: 100px;
+		height: 69px;
 		margin-top: 11px;
+		width: 0px;
 	}
 	.pageHeader .bannerCaption {
 		font-size: 20px;
@@ -2283,9 +2410,9 @@ font-size: 40px;
 	}
 
 	.bannerCaption h1::before {
-		width: 180px;
+		width: 164px;
 		height: 53px;
-		margin-top: 9px;
+		margin-top: 10px;
 	}
 
 	.bannerCaption h1::after {
@@ -4071,7 +4198,10 @@ ul.featured-list-wrapper li{
     text-align: center;
 	border-radius: 5px;
     padding: 7px;
+		
 }
+
+
 
 @media screen and (max-width: 768px) {
  .cw-call-action a{

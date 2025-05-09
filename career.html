@@ -52,12 +52,15 @@
   <link rel="stylesheet" href="/styles/css/owl.carousel.min.css">
   <link rel="stylesheet" href="/styles/css/owl.theme.default.min.css">
   <link rel="stylesheet" href="/styles/css/anicollection.css">
-  <link rel="stylesheet" href="/styles/css/stylesheet.css">
   <style>
     @media (min-width: 768px) {
       .action {
         display: none;
+
       }
+      .topSection{
+		display: none !important;
+	}
     }
 
     .custom-navbar {
@@ -367,11 +370,11 @@
       <div class="row">
         <div id="head" class="col-sm-12 bannerCaption"
           data-anijs="if: scroll, on: window, do: fadeInDown animated, before: $scrollReveal">
-          <h1>Career</h1>
+          <h1><span class="career-highlight">Career</span></h1>
         </div>
-
+  
         <div class="roundCircle"></div>
-
+  
         <div class="main">
           <div class="circle">
             <svg width="65" height="67" viewBox="0 0 65 67" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -381,10 +384,10 @@
             </svg>
           </div>
         </div>
-
       </div>
     </div>
   </section>
+  
   <section class="career-area py-5 bg-light">
     <div class="container">
       <div class="text-center mb-5">

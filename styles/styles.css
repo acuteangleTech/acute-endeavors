@@ -2833,12 +2833,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   }
 
 
-  .pageHeader .bannerCaption h1::before {
+  /* .pageHeader .bannerCaption h1::before {
     width: 60%;
     height: 68px;
     border-radius: 70px;
-    background-color: #0d6efd;
-}
+    /* background-color: #0d6efd; */
+} */
 
 .pageHeader .bannerCaption{
 	padding-top: 70px;
